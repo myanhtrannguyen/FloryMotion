@@ -59,34 +59,6 @@ pip-wheel-metadata/
 .coverage
 htmlcov/
 
-# Keep folder structure if needed
-!data/.gitkeep
-!datasets/.gitkeep
-
-# =========================
-# Model checkpoints / Weights
-# =========================
-checkpoints/
-weights/
-models/
-*.pt
-*.pth
-*.ckpt
-*.h5
-*.onnx
-*.pkl
-*.joblib
-
-# =========================
-# Outputs / Results
-# =========================
-outputs/
-results/
-predictions/
-samples/
-figures/
-visualizations/
-
 # =========================
 # Images / Masks generated
 # =========================
@@ -102,15 +74,6 @@ masks_generated/
 *.mov
 *.mkv
 *.webm
-
-# =========================
-# CSV / Split files
-# =========================
-*.csv
-*.tsv
-
-# Nếu muốn track file split CSV thì bỏ comment dòng dưới:
-# !splits/*.csv
 
 # =========================
 # macOS
