@@ -1,0 +1,143 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+wandb/
+mlruns/
+runs/
+
+# =========================
+# Python packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# =========================
+# Cache
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Data / Dataset
+# =========================
+data/
+datasets/
+raw/
+processed/
+train/
+val/
+test/
+
+# Keep folder structure if needed
+!data/.gitkeep
+!datasets/.gitkeep
+
+# =========================
+# Model checkpoints / Weights
+# =========================
+checkpoints/
+weights/
+models/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.pkl
+*.joblib
+
+# =========================
+# Outputs / Results
+# =========================
+outputs/
+results/
+predictions/
+samples/
+figures/
+visualizations/
+
+# =========================
+# Images / Masks generated
+# =========================
+generated/
+augmented/
+masks_generated/
+
+# =========================
+# Large media files
+# =========================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# =========================
+# CSV / Split files
+# =========================
+*.csv
+*.tsv
+
+# Nếu muốn track file split CSV thì bỏ comment dòng dưới:
+# !splits/*.csv
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Linux
+# =========================
+*~
+
+# =========================
+# Windows
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
