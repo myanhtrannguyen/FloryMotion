@@ -426,7 +426,7 @@ Before running experiments, verify the following:
 Each experiment should create a separate folder:
 
 ```text
-source/image_segmentation/
+source/image_segmentation/models
 ├── unet_resnet34/
 │   ├── config.yaml
 │   ├── best_model.pth
