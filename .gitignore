@@ -59,17 +59,6 @@ pip-wheel-metadata/
 .coverage
 htmlcov/
 
-# =========================
-# Data / Dataset
-# =========================
-data/
-datasets/
-raw/
-processed/
-train/
-val/
-test/
-
 # Keep folder structure if needed
 !data/.gitkeep
 !datasets/.gitkeep
