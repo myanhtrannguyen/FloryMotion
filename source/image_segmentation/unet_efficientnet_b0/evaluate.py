@@ -11,16 +11,16 @@ from torch.utils.data import DataLoader
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SCRIPT_DIR = Path(__file__).resolve().parent
-LINKNET_DIR = PROJECT_ROOT / "image_segmentation" / "linknet_efficientnet_b0"
+UNET_DIR = PROJECT_ROOT / "image_segmentation" / "unet_efficientnet_b0"
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-if str(LINKNET_DIR) not in sys.path:
-    sys.path.insert(0, str(LINKNET_DIR))
+if str(UNET_DIR) not in sys.path:
+    sys.path.insert(0, str(UNET_DIR))
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from dataset import OxfordFlowersSegmentation
-from losses import BCEDiceLoss
+from image_segmentation.dataset import OxfordFlowersSegmentation
+from image_segmentation.losses import BCEDiceLoss
 from train import run_epoch
 from models.unet_efficientnet_b0 import UNetEfficientNetB0
 
@@ -29,11 +29,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluate U-Net EfficientNet-B0 checkpoint.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/unet_efficientnet_b0/models/config.yaml",
+        default="source/image_segmentation/unet_efficientnet_b0/models/kaggle/config.yaml",
     )
     parser.add_argument(
         "--checkpoint",
-        default="source/image_segmentation/unet_efficientnet_b0/models/best_model.pth",
+        default="source/image_segmentation/unet_efficientnet_b0/models/kaggle/best_model.pth",
     )
     parser.add_argument("--split", default="test", choices=["train", "val", "test"])
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
