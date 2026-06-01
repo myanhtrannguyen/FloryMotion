@@ -9,18 +9,12 @@ import torch
 import yaml
 from PIL import Image
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-SCRIPT_DIR = Path(__file__).resolve().parent
-LINKNET_DIR = PROJECT_ROOT / "image_segmentation" / "linknet_efficientnet_b0"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-if str(LINKNET_DIR) not in sys.path:
-    sys.path.insert(0, str(LINKNET_DIR))
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
 
-from dataset import IMAGENET_MEAN, IMAGENET_STD
-from models.unet_efficientnet_b0 import UNetEfficientNetB0
+from source.image_segmentation.dataset import IMAGENET_MEAN, IMAGENET_STD
+from models.swinunet_swin_tiny import SwinUNetTiny
 
 
 def preprocess(image_path: Path, image_size: int) -> torch.Tensor:
@@ -51,10 +45,7 @@ def main() -> None:
         config = yaml.safe_load(f)
 
     device = torch.device(args.device)
-    model = UNetEfficientNetB0(
-        num_classes=1,
-        concat_input=bool(config.get("concat_input", True)),
-    ).to(device)
+    model = SwinUNetTiny().to(device)
     checkpoint = torch.load(args.checkpoint, map_location=device)
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
@@ -65,7 +56,7 @@ def main() -> None:
         prob = torch.sigmoid(model(image_tensor))[0, 0].cpu().numpy()
 
     mask = (prob > args.threshold).astype(np.uint8) * 255
-    output = Path(args.output) if args.output else image_path.with_name(f"{image_path.stem}_unet_mask.png")
+    output = Path(args.output) if args.output else image_path.with_name(f"{image_path.stem}_mask.png")
     Image.fromarray(mask).save(output)
     print(output)
 

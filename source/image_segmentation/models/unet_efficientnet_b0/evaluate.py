@@ -21,7 +21,7 @@ for path in (REPO_ROOT, SOURCE_ROOT, SCRIPT_DIR):
 
 from dataset import OxfordFlowersSegmentation
 from losses import BCEDiceLoss
-from metric import compute_all_metrics, dice_score, hd95
+from metrics import compute_all_metrics, dice_score, hd95
 from models.unet_efficientnet_b0 import UNetEfficientNetB0
 
 
