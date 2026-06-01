@@ -1,0 +1,549 @@
+{
+  "dice": 0.891597431691249,
+  "iou": 0.8435566724471417,
+  "precision": 0.8923095452296148,
+  "hd95": 28.208226888978135,
+  "boundary_f_score": 0.7866622977572085,
+  "boundary_precision": 0.7886108180547139,
+  "boundary_recall": 0.8007872882141954,
+  "loss": 0.2708591547895846,
+  "top5_categories_by_dice": [
+    {
+      "name_cat": "buttercup",
+      "mean_dice": 0.9914164777979128,
+      "count": 7
+    },
+    {
+      "name_cat": "mexican aster",
+      "mean_dice": 0.991289462199596,
+      "count": 4
+    },
+    {
+      "name_cat": "corn poppy",
+      "mean_dice": 0.9894913572363606,
+      "count": 4
+    },
+    {
+      "name_cat": "marigold",
+      "mean_dice": 0.9891664130119173,
+      "count": 7
+    },
+    {
+      "name_cat": "english marigold",
+      "mean_dice": 0.9884422004416525,
+      "count": 7
+    }
+  ],
+  "per_category_dice": [
+    {
+      "name_cat": "buttercup",
+      "mean_dice": 0.9914164777979128,
+      "count": 7
+    },
+    {
+      "name_cat": "mexican aster",
+      "mean_dice": 0.991289462199596,
+      "count": 4
+    },
+    {
+      "name_cat": "corn poppy",
+      "mean_dice": 0.9894913572363606,
+      "count": 4
+    },
+    {
+      "name_cat": "marigold",
+      "mean_dice": 0.9891664130119173,
+      "count": 7
+    },
+    {
+      "name_cat": "english marigold",
+      "mean_dice": 0.9884422004416525,
+      "count": 7
+    },
+    {
+      "name_cat": "osteospermum",
+      "mean_dice": 0.9865698125448913,
+      "count": 6
+    },
+    {
+      "name_cat": "orange dahlia",
+      "mean_dice": 0.9855294975045265,
+      "count": 6
+    },
+    {
+      "name_cat": "tree poppy",
+      "mean_dice": 0.9853892559563865,
+      "count": 6
+    },
+    {
+      "name_cat": "watercress",
+      "mean_dice": 0.984687843192228,
+      "count": 19
+    },
+    {
+      "name_cat": "bishop of llandaff",
+      "mean_dice": 0.9836380150870618,
+      "count": 11
+    },
+    {
+      "name_cat": "pink primrose",
+      "mean_dice": 0.9833708750854312,
+      "count": 4
+    },
+    {
+      "name_cat": "windflower",
+      "mean_dice": 0.9833356875147662,
+      "count": 6
+    },
+    {
+      "name_cat": "geranium",
+      "mean_dice": 0.9828481238549934,
+      "count": 11
+    },
+    {
+      "name_cat": "barbeton daisy",
+      "mean_dice": 0.9807146724827756,
+      "count": 13
+    },
+    {
+      "name_cat": "anthurium",
+      "mean_dice": 0.980578485755746,
+      "count": 10
+    },
+    {
+      "name_cat": "gazania",
+      "mean_dice": 0.9805346752288541,
+      "count": 8
+    },
+    {
+      "name_cat": "globe-flower",
+      "mean_dice": 0.9801185274517525,
+      "count": 4
+    },
+    {
+      "name_cat": "oxeye daisy",
+      "mean_dice": 0.9799240269626495,
+      "count": 5
+    },
+    {
+      "name_cat": "pink-yellow dahlia",
+      "mean_dice": 0.9796338770711688,
+      "count": 11
+    },
+    {
+      "name_cat": "black-eyed susan",
+      "mean_dice": 0.9765679993793114,
+      "count": 5
+    },
+    {
+      "name_cat": "tree mallow",
+      "mean_dice": 0.9764414011551715,
+      "count": 6
+    },
+    {
+      "name_cat": "common dandelion",
+      "mean_dice": 0.9758933838813293,
+      "count": 9
+    },
+    {
+      "name_cat": "wallflower",
+      "mean_dice": 0.9735916795216412,
+      "count": 19
+    },
+    {
+      "name_cat": "king protea",
+      "mean_dice": 0.9718639392376807,
+      "count": 5
+    },
+    {
+      "name_cat": "blanket flower",
+      "mean_dice": 0.9707773376554982,
+      "count": 5
+    },
+    {
+      "name_cat": "hibiscus",
+      "mean_dice": 0.9694730771063511,
+      "count": 13
+    },
+    {
+      "name_cat": "yellow iris",
+      "mean_dice": 0.969106609419048,
+      "count": 5
+    },
+    {
+      "name_cat": "canna lily",
+      "mean_dice": 0.9682439551318889,
+      "count": 8
+    },
+    {
+      "name_cat": "colt's foot",
+      "mean_dice": 0.9657219616143722,
+      "count": 9
+    },
+    {
+      "name_cat": "rose",
+      "mean_dice": 0.9654377159558273,
+      "count": 17
+    },
+    {
+      "name_cat": "californian poppy",
+      "mean_dice": 0.9623896171384084,
+      "count": 10
+    },
+    {
+      "name_cat": "peruvian lily",
+      "mean_dice": 0.9618503288353171,
+      "count": 8
+    },
+    {
+      "name_cat": "desert-rose",
+      "mean_dice": 0.9600810861276148,
+      "count": 7
+    },
+    {
+      "name_cat": "daffodil",
+      "mean_dice": 0.9588826341525238,
+      "count": 6
+    },
+    {
+      "name_cat": "sword lily",
+      "mean_dice": 0.9557849948587556,
+      "count": 13
+    },
+    {
+      "name_cat": "poinsettia",
+      "mean_dice": 0.955686564240068,
+      "count": 10
+    },
+    {
+      "name_cat": "thorn apple",
+      "mean_dice": 0.9546718008937688,
+      "count": 12
+    },
+    {
+      "name_cat": "frangipani",
+      "mean_dice": 0.9536074145070144,
+      "count": 17
+    },
+    {
+      "name_cat": "pincushion flower",
+      "mean_dice": 0.9521509316384048,
+      "count": 6
+    },
+    {
+      "name_cat": "japanese anemone",
+      "mean_dice": 0.9514465440450414,
+      "count": 5
+    },
+    {
+      "name_cat": "azalea",
+      "mean_dice": 0.949923894002312,
+      "count": 10
+    },
+    {
+      "name_cat": "bromelia",
+      "mean_dice": 0.9496368880908305,
+      "count": 7
+    },
+    {
+      "name_cat": "trumpet creeper",
+      "mean_dice": 0.9492908914118686,
+      "count": 6
+    },
+    {
+      "name_cat": "water lily",
+      "mean_dice": 0.944170268637408,
+      "count": 19
+    },
+    {
+      "name_cat": "garden phlox",
+      "mean_dice": 0.9423776229032225,
+      "count": 4
+    },
+    {
+      "name_cat": "sunflower",
+      "mean_dice": 0.9416004173797164,
+      "count": 6
+    },
+    {
+      "name_cat": "fire lily",
+      "mean_dice": 0.9410455190900722,
+      "count": 4
+    },
+    {
+      "name_cat": "sweet william",
+      "mean_dice": 0.9408753881985243,
+      "count": 9
+    },
+    {
+      "name_cat": "tiger lily",
+      "mean_dice": 0.9393902553172699,
+      "count": 5
+    },
+    {
+      "name_cat": "prince of wales feathers",
+      "mean_dice": 0.9349957936946407,
+      "count": 4
+    },
+    {
+      "name_cat": "clematis",
+      "mean_dice": 0.9349720504971332,
+      "count": 12
+    },
+    {
+      "name_cat": "moon orchid",
+      "mean_dice": 0.9345821221646149,
+      "count": 4
+    },
+    {
+      "name_cat": "ruby-lipped cattleya",
+      "mean_dice": 0.9320602575610469,
+      "count": 7
+    },
+    {
+      "name_cat": "columbine",
+      "mean_dice": 0.9311687866573639,
+      "count": 8
+    },
+    {
+      "name_cat": "hard-leaved pocket orchid",
+      "mean_dice": 0.9293989765300767,
+      "count": 6
+    },
+    {
+      "name_cat": "bearded iris",
+      "mean_dice": 0.9191391748113434,
+      "count": 6
+    },
+    {
+      "name_cat": "sweet pea",
+      "mean_dice": 0.907771671229974,
+      "count": 6
+    },
+    {
+      "name_cat": "cape flower",
+      "mean_dice": 0.906448037555134,
+      "count": 11
+    },
+    {
+      "name_cat": "morning glory",
+      "mean_dice": 0.9011235994400671,
+      "count": 11
+    },
+    {
+      "name_cat": "siam tulip",
+      "mean_dice": 0.8983855483044678,
+      "count": 4
+    },
+    {
+      "name_cat": "gaura",
+      "mean_dice": 0.8951400017586045,
+      "count": 7
+    },
+    {
+      "name_cat": "bee balm",
+      "mean_dice": 0.8918068665071078,
+      "count": 7
+    },
+    {
+      "name_cat": "blackberry lily",
+      "mean_dice": 0.8878251297010264,
+      "count": 5
+    },
+    {
+      "name_cat": "purple coneflower",
+      "mean_dice": 0.882172439363833,
+      "count": 8
+    },
+    {
+      "name_cat": "lenten rose",
+      "mean_dice": 0.8786352281596902,
+      "count": 6
+    },
+    {
+      "name_cat": "bird of paradise",
+      "mean_dice": 0.8765444515187276,
+      "count": 8
+    },
+    {
+      "name_cat": "spring crocus",
+      "mean_dice": 0.8701287169944464,
+      "count": 4
+    },
+    {
+      "name_cat": "camellia",
+      "mean_dice": 0.869682850049085,
+      "count": 9
+    },
+    {
+      "name_cat": "bougainvillea",
+      "mean_dice": 0.8686007975051603,
+      "count": 13
+    },
+    {
+      "name_cat": "lotus",
+      "mean_dice": 0.8663113712297023,
+      "count": 14
+    },
+    {
+      "name_cat": "spear thistle",
+      "mean_dice": 0.8627865415943159,
+      "count": 5
+    },
+    {
+      "name_cat": "cyclamen",
+      "mean_dice": 0.8566397248412703,
+      "count": 16
+    },
+    {
+      "name_cat": "mexican petunia",
+      "mean_dice": 0.8529614458532997,
+      "count": 8
+    },
+    {
+      "name_cat": "silverbush",
+      "mean_dice": 0.8505134795226876,
+      "count": 5
+    },
+    {
+      "name_cat": "primula",
+      "mean_dice": 0.84031525038017,
+      "count": 10
+    },
+    {
+      "name_cat": "hippeastrum",
+      "mean_dice": 0.8387759687523098,
+      "count": 7
+    },
+    {
+      "name_cat": "mallow",
+      "mean_dice": 0.8337752236463061,
+      "count": 6
+    },
+    {
+      "name_cat": "foxglove",
+      "mean_dice": 0.8303081880494776,
+      "count": 16
+    },
+    {
+      "name_cat": "red ginger",
+      "mean_dice": 0.8179688399132214,
+      "count": 4
+    },
+    {
+      "name_cat": "snapdragon",
+      "mean_dice": 0.8142644877900532,
+      "count": 8
+    },
+    {
+      "name_cat": "toad lily",
+      "mean_dice": 0.7981895449730018,
+      "count": 4
+    },
+    {
+      "name_cat": "magnolia",
+      "mean_dice": 0.7973556005410322,
+      "count": 6
+    },
+    {
+      "name_cat": "artichoke",
+      "mean_dice": 0.7961361457974933,
+      "count": 8
+    },
+    {
+      "name_cat": "globe thistle",
+      "mean_dice": 0.7899802553998633,
+      "count": 5
+    },
+    {
+      "name_cat": "passion flower",
+      "mean_dice": 0.7878396328724623,
+      "count": 25
+    },
+    {
+      "name_cat": "pelargonium",
+      "mean_dice": 0.7831294537409746,
+      "count": 7
+    },
+    {
+      "name_cat": "giant white arum lily",
+      "mean_dice": 0.7809837529138324,
+      "count": 5
+    },
+    {
+      "name_cat": "wild pansy",
+      "mean_dice": 0.7687251223992417,
+      "count": 9
+    },
+    {
+      "name_cat": "great masterwort",
+      "mean_dice": 0.7623567320353742,
+      "count": 5
+    },
+    {
+      "name_cat": "fritillary",
+      "mean_dice": 0.7607912685157537,
+      "count": 9
+    },
+    {
+      "name_cat": "monkshood",
+      "mean_dice": 0.753128242367642,
+      "count": 4
+    },
+    {
+      "name_cat": "cautleya spicata",
+      "mean_dice": 0.7526481911959128,
+      "count": 5
+    },
+    {
+      "name_cat": "balloon flower",
+      "mean_dice": 0.7262797082953807,
+      "count": 5
+    },
+    {
+      "name_cat": "petunia",
+      "mean_dice": 0.7241700367191566,
+      "count": 26
+    },
+    {
+      "name_cat": "alpine sea holly",
+      "mean_dice": 0.6848835101477023,
+      "count": 5
+    },
+    {
+      "name_cat": "canterbury bells",
+      "mean_dice": 0.6632879643967273,
+      "count": 4
+    },
+    {
+      "name_cat": "love in the mist",
+      "mean_dice": 0.5912134428284138,
+      "count": 4
+    },
+    {
+      "name_cat": "bolero deep blue",
+      "mean_dice": 0.5821420835267359,
+      "count": 4
+    },
+    {
+      "name_cat": "carnation",
+      "mean_dice": 0.5729903107027697,
+      "count": 5
+    },
+    {
+      "name_cat": "ball moss",
+      "mean_dice": 0.550287346205024,
+      "count": 4
+    },
+    {
+      "name_cat": "grape hyacinth",
+      "mean_dice": 0.4178203116345174,
+      "count": 4
+    },
+    {
+      "name_cat": "stemless gentian",
+      "mean_dice": 0.3818558624053089,
+      "count": 7
+    }
+  ]
+}
