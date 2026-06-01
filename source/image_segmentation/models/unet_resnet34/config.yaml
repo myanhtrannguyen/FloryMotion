@@ -1,0 +1,29 @@
+experiment_name: unet_resnet34
+
+dataset:
+  root_dir: data/OxfordFlowers102
+  input_size: 256
+  train_split: train
+  val_split: val
+  test_split: test
+
+model:
+  name: U-Net
+  backbone: ResNet34
+  pretrained: true
+  num_classes: 1
+
+training:
+  batch_size: 8
+  epochs: 50
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  scheduler: ReduceLROnPlateau
+  early_stopping_patience: 10
+  random_seed: 42
+  dice_weight: 1.0
+
+output:
+  save_dir: source/image_segmentation/models/unet_resnet34
+  checkpoint_name: best_model.pth
