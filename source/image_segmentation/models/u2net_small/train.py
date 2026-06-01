@@ -141,7 +141,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Train LinkNet with EfficientNet-B0 backbone.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/u2net_small/models/config.yaml",
+        default="source/image_segmentation/u2net_small/config.yaml",
     )
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--resume", default=None)

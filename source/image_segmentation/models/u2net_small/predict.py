@@ -9,7 +9,7 @@ import torch
 import yaml
 from PIL import Image
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -30,11 +30,11 @@ def main() -> None:
     parser.add_argument("image", help="Path to input flower image.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/u2net_small/models/config.yaml",
+        default="source/image_segmentation/u2net_small/config.yaml",
     )
     parser.add_argument(
         "--checkpoint",
-        default="source/image_segmentation/u2net_small/models/best_model.pth",
+        default="source/image_segmentation/u2net_small/best_model.pth",
     )
     parser.add_argument("--output", default=None)
     parser.add_argument("--threshold", type=float, default=0.5)

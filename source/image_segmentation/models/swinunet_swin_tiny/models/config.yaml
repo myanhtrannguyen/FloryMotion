@@ -1,7 +1,7 @@
 data_root: data/OxfordFlowers102
-output_dir: source/image_segmentation/swinunet_swin_tiny/models
+output_dir: source/image_segmentation/swinunet_swin_tiny
 image_size: 256
-batch_size: 8
+batch_size: 16
 epochs: 50
 learning_rate: 0.0001
 weight_decay: 0.0001
