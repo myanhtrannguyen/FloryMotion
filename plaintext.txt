@@ -1,0 +1,30 @@
+Module 2 is trained independently on a specialized photo-to-cartoon dataset. After training, the model weights are frozen and the module is used as a style transformation component to convert segmented flower images from Oxford Flowers 102 into cartoon-style flower images.
+
+Oxford Flowers image
+        ↓
+Module 1: Flower segmentation
+        ↓
+Flower foreground / masked flower image
+        ↓
+Module 2: Frozen cartoonization model
+        ↓
+Cartoon-style flower image
+        ↓
+Module 3: Prompt → CIG
+        ↓
+Module 4: Motion templates
+
+
+Module 2:
+Specialized cartoonization dataset
+        ↓
+Train style transformation models
+        ↓
+Select best model based on style/content metrics
+        ↓
+Freeze model weights
+
+content preservation
+edge preservation
+mask consistency
+flower identity preservation
