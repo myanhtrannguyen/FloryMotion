@@ -1,0 +1,13 @@
+data_root: data/OxfordFlowers102
+output_dir: source/image_segmentation/models/linknet_efficientnet_b0/models/local
+image_size: 256
+batch_size: 8
+epochs: 50
+learning_rate: 0.0001
+weight_decay: 0.0001
+dice_weight: 1.0
+early_stopping_patience: 10
+num_workers: 0
+seed: 42
+log_interval: 25
+encoder_weights: null

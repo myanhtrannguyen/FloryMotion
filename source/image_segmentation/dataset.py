@@ -59,6 +59,12 @@ def convert_blue_background_mask(mask: Image.Image) -> np.ndarray:
     return (~background).astype(np.uint8)
 
 
+def mask_has_foreground(mask_path: Path) -> bool:
+    mask = Image.open(mask_path).convert("RGB")
+    binary_mask = convert_blue_background_mask(mask)
+    return bool(binary_mask.sum() > 0)
+
+
 class OxfordFlowersSegmentation(Dataset):
     def __init__(
         self,
@@ -66,15 +72,28 @@ class OxfordFlowersSegmentation(Dataset):
         split: str,
         image_size: int = 256,
         augment: bool = False,
+        drop_empty_masks: bool = True,
     ) -> None:
         self.data_root = Path(data_root)
         self.split = split
         self.image_size = image_size
         self.augment = augment
+        self.drop_empty_masks = drop_empty_masks
         self.samples = read_split_csv(
             self.data_root / "oxford102_flower_segmentation.csv",
             split=split,
         )
+        self.dropped_empty_masks: List[FlowerSample] = []
+
+        if self.drop_empty_masks:
+            kept_samples: List[FlowerSample] = []
+            for sample in self.samples:
+                mask_path = self.data_root / self.split / "masks" / sample.mask_name
+                if mask_has_foreground(mask_path):
+                    kept_samples.append(sample)
+                else:
+                    self.dropped_empty_masks.append(sample)
+            self.samples = kept_samples
 
         if not self.samples:
             raise ValueError(f"No samples found for split={split!r} in {self.data_root}")
