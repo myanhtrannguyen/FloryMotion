@@ -14,20 +14,14 @@ from torch.optim import AdamW
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-SCRIPT_DIR = Path(__file__).resolve().parent
-LINKNET_DIR = PROJECT_ROOT / "image_segmentation" / "linknet_efficientnet_b0"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-if str(LINKNET_DIR) not in sys.path:
-    sys.path.insert(0, str(LINKNET_DIR))
-if str(SCRIPT_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPT_DIR))
 
-from image_segmentation.dataset import OxfordFlowersSegmentation
-from image_segmentation.losses import BCEDiceLoss
-from image_segmentation.metric import compute_all_metrics
-from models.unet_efficientnet_b0 import UNetEfficientNetB0
+from source.image_segmentation.dataset import OxfordFlowersSegmentation
+from source.image_segmentation.losses import BCEDiceLoss
+from source.image_segmentation.metric import compute_all_metrics
+from models.u2net_small import U2NetSmall
 
 
 def set_seed(seed: int) -> None:
@@ -66,8 +60,26 @@ def run_epoch(
         batch_size = images.size(0)
 
         with torch.set_grad_enabled(training):
-            logits = model(images)
-            loss = criterion(logits, masks)
+            outputs = model(images)
+
+            if isinstance(outputs, tuple):
+                d0, d1, d2, d3, d4, d5, d6 = outputs
+
+                loss = (
+                    criterion(d0, masks)
+                    + criterion(d1, masks)
+                    + criterion(d2, masks)
+                    + criterion(d3, masks)
+                    + criterion(d4, masks)
+                    + criterion(d5, masks)
+                    + criterion(d6, masks)
+                )
+
+                logits = d0
+
+            else:
+                logits = outputs
+                loss = criterion(logits, masks)
 
             if training:
                 optimizer.zero_grad(set_to_none=True)
@@ -126,12 +138,13 @@ def save_checkpoint(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Train U-Net with EfficientNet-B0 backbone.")
+    parser = argparse.ArgumentParser(description="Train LinkNet with EfficientNet-B0 backbone.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/unet_efficientnet_b0/models/config.yaml",
+        default="source/image_segmentation/u2net_small/models/config.yaml",
     )
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--resume", default=None)
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -143,6 +156,11 @@ def main() -> None:
         yaml.safe_dump(config, f, sort_keys=False)
 
     device = torch.device(args.device)
+    print(f"Using device: {device}")
+
+    if torch.cuda.is_available():
+        print(f"GPU: {torch.cuda.get_device_name(0)}")
+
     train_dataset = OxfordFlowersSegmentation(
         config["data_root"],
         split="train",
@@ -171,13 +189,7 @@ def main() -> None:
         pin_memory=device.type == "cuda",
     )
 
-    model = UNetEfficientNetB0(
-        num_classes=1,
-        concat_input=bool(config.get("concat_input", True)),
-    ).to(device)
-    encoder_weights = config.get("encoder_weights")
-    if encoder_weights:
-        model.load_encoder_weights(str(encoder_weights), strict=False)
+    model = U2NetSmall().to(device)
 
     criterion = BCEDiceLoss(dice_weight=float(config["dice_weight"]))
     optimizer = AdamW(
@@ -186,13 +198,44 @@ def main() -> None:
         weight_decay=float(config["weight_decay"]),
     )
     scheduler = ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=3)
-
+    
+    start_epoch = 1
     best_dice = -1.0
     epochs_without_improvement = 0
     history = []
 
+    history_file = output_dir / "history.json"
+
+    if history_file.exists():
+        with history_file.open("r", encoding="utf-8") as f:
+            history = json.load(f)
+
+        last_history_epoch = history[-1]["epoch"]
+    else:
+        history = []
+        last_history_epoch = 0
+
+    if args.resume:
+        if history_file.exists():
+            with history_file.open("r", encoding="utf-8") as f:
+                history = json.load(f)
+
+        checkpoint = torch.load(args.resume, map_location=device)
+
+        model.load_state_dict(checkpoint["model_state_dict"])
+        optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+
+        start_epoch = max(
+            checkpoint["epoch"] + 1,
+            last_history_epoch + 1,
+        )
+        best_dice = checkpoint["metrics"]["dice"]
+
+        print(f"Resuming from epoch {start_epoch}")
+        print(f"Best Dice so far: {best_dice:.4f}")
+
     print("Starting training...")
-    for epoch in range(1, int(config["epochs"]) + 1):
+    for epoch in range(start_epoch, int(config["epochs"]) + 1):
         print(f"\nStarting epoch {epoch}/{int(config['epochs'])}", flush=True)
         train_metrics = run_epoch(
             model,
