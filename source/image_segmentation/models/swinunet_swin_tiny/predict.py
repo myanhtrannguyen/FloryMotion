@@ -30,11 +30,19 @@ def main() -> None:
     parser.add_argument("image", help="Path to input flower image.")
     parser.add_argument(
         "--config",
+<<<<<<<< HEAD:source/image_segmentation/models/unet_efficientnet_b0/predict.py
+        default="source/image_segmentation/models/unet_efficientnet_b0/models/kaggle/config.yaml",
+    )
+    parser.add_argument(
+        "--checkpoint",
+        default="source/image_segmentation/models/unet_efficientnet_b0/models/kaggle/best_model.pth",
+========
         default="source/image_segmentation/swinunet_swin_tiny/config.yaml",
     )
     parser.add_argument(
         "--checkpoint",
         default="source/image_segmentation/swinunet_swin_tiny/best_model.pth",
+>>>>>>>> e2b2c1012c1004ec13cfcc8d00bb723760914b88:source/image_segmentation/models/swinunet_swin_tiny/predict.py
     )
     parser.add_argument("--output", default=None)
     parser.add_argument("--threshold", type=float, default=0.5)

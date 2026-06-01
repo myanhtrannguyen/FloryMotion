@@ -14,13 +14,15 @@ from torch.optim import AdamW
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+REPO_ROOT = Path(__file__).resolve().parents[3]
+SOURCE_ROOT = Path(__file__).resolve().parents[2]
+for path in (REPO_ROOT, SOURCE_ROOT):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
 
-from source.image_segmentation.dataset import OxfordFlowersSegmentation
-from source.image_segmentation.losses import BCEDiceLoss
-from image_segmentation.metric import compute_all_metrics
+from dataset import OxfordFlowersSegmentation
+from losses import BCEDiceLoss
+from metric import compute_all_metrics
 from models.linknet_efficientnet_b0 import LinkNetEfficientNetB0
 
 
@@ -105,25 +107,103 @@ def save_checkpoint(
     epoch: int,
     metrics: Dict[str, float],
     config: Dict[str, object],
+    scheduler: ReduceLROnPlateau | None = None,
 ) -> None:
+    checkpoint = {
+        "model_state_dict": model.state_dict(),
+        "optimizer_state_dict": optimizer.state_dict(),
+        "epoch": epoch,
+        "metrics": metrics,
+        "config": config,
+    }
+    if scheduler is not None:
+        checkpoint["scheduler_state_dict"] = scheduler.state_dict()
+
     path.parent.mkdir(parents=True, exist_ok=True)
-    torch.save(
-        {
-            "model_state_dict": model.state_dict(),
-            "optimizer_state_dict": optimizer.state_dict(),
-            "epoch": epoch,
-            "metrics": metrics,
-            "config": config,
-        },
-        path,
-    )
+    torch.save(checkpoint, path)
+
+
+def load_history(history_path: Path) -> list[Dict[str, object]]:
+    if not history_path.exists():
+        return []
+
+    with history_path.open("r", encoding="utf-8") as f:
+        history = json.load(f)
+
+    if not isinstance(history, list):
+        raise ValueError(f"Expected list history in {history_path}")
+    return history
+
+
+def get_best_dice(history: list[Dict[str, object]]) -> float:
+    best_dice = -1.0
+    for record in history:
+        val_metrics = record.get("val", {})
+        if isinstance(val_metrics, dict) and "dice" in val_metrics:
+            best_dice = max(best_dice, float(val_metrics["dice"]))
+    return best_dice
+
+
+def get_epochs_without_improvement(history: list[Dict[str, object]]) -> int:
+    best_dice = -1.0
+    epochs_without_improvement = 0
+    for record in history:
+        val_metrics = record.get("val", {})
+        if not isinstance(val_metrics, dict) or "dice" not in val_metrics:
+            continue
+        dice = float(val_metrics["dice"])
+        if dice > best_dice:
+            best_dice = dice
+            epochs_without_improvement = 0
+        else:
+            epochs_without_improvement += 1
+    return epochs_without_improvement
+
+
+def resume_if_available(
+    output_dir: Path,
+    model: torch.nn.Module,
+    optimizer: torch.optim.Optimizer,
+    scheduler: ReduceLROnPlateau,
+    device: torch.device,
+) -> tuple[list[Dict[str, object]], int, float, int]:
+    history_path = output_dir / "history.json"
+    history = load_history(history_path)
+    best_dice = get_best_dice(history)
+    epochs_without_improvement = get_epochs_without_improvement(history)
+    start_epoch = int(history[-1]["epoch"]) + 1 if history else 1
+
+    checkpoint_path = output_dir / "last_model.pth"
+    if not checkpoint_path.exists():
+        checkpoint_path = output_dir / "best_model.pth"
+
+    if history and checkpoint_path.exists():
+        checkpoint = torch.load(checkpoint_path, map_location=device)
+        model.load_state_dict(checkpoint["model_state_dict"])
+        if "optimizer_state_dict" in checkpoint:
+            optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+        if "scheduler_state_dict" in checkpoint:
+            scheduler.load_state_dict(checkpoint["scheduler_state_dict"])
+        checkpoint_epoch = int(checkpoint.get("epoch", start_epoch - 1))
+        print(
+            f"Resuming from {checkpoint_path} "
+            f"(checkpoint epoch {checkpoint_epoch}, next epoch {start_epoch})",
+            flush=True,
+        )
+    elif history:
+        raise FileNotFoundError(
+            f"Found {history_path} but no checkpoint in {output_dir}. "
+            "Cannot resume safely without saved model weights."
+        )
+
+    return history, start_epoch, best_dice, epochs_without_improvement
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Train LinkNet with EfficientNet-B0 backbone.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/linknet_efficientnet_b0/models/config.yaml",
+        default="source/image_segmentation/models/linknet_efficientnet_b0/models/local/config.yaml",
     )
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
@@ -148,6 +228,16 @@ def main() -> None:
         split="val",
         image_size=int(config["image_size"]),
         augment=False,
+    )
+    print(
+        f"Dataset train: {len(train_dataset)} samples "
+        f"(dropped empty masks: {len(train_dataset.dropped_empty_masks)})",
+        flush=True,
+    )
+    print(
+        f"Dataset val: {len(val_dataset)} samples "
+        f"(dropped empty masks: {len(val_dataset.dropped_empty_masks)})",
+        flush=True,
     )
 
     train_loader = DataLoader(
@@ -178,11 +268,24 @@ def main() -> None:
     )
     scheduler = ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=3)
 
-    best_dice = -1.0
-    epochs_without_improvement = 0
-    history = []
+    history, start_epoch, best_dice, epochs_without_improvement = resume_if_available(
+        output_dir,
+        model,
+        optimizer,
+        scheduler,
+        device,
+    )
+
+    if start_epoch > int(config["epochs"]):
+        print(
+            f"Training already reached epoch {start_epoch - 1}. "
+            f"Increase epochs above {config['epochs']} to continue.",
+            flush=True,
+        )
+        return
+
     print("Starting training...")
-    for epoch in range(1, int(config["epochs"]) + 1):
+    for epoch in range(start_epoch, int(config["epochs"]) + 1):
         print(f"\nStarting epoch {epoch}/{int(config['epochs'])}", flush=True)
         train_metrics = run_epoch(
             model,
@@ -210,6 +313,16 @@ def main() -> None:
         print("Epoch summary:", flush=True)
         print(json.dumps(record, indent=2), flush=True)
 
+        save_checkpoint(
+            output_dir / "last_model.pth",
+            model,
+            optimizer,
+            epoch,
+            val_metrics,
+            config,
+            scheduler,
+        )
+
         if val_metrics["dice"] > best_dice:
             best_dice = val_metrics["dice"]
             epochs_without_improvement = 0
@@ -220,6 +333,7 @@ def main() -> None:
                 epoch,
                 val_metrics,
                 config,
+                scheduler,
             )
         else:
             epochs_without_improvement += 1

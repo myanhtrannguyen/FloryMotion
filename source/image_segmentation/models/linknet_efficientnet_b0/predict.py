@@ -13,7 +13,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from source.image_segmentation.dataset import IMAGENET_MEAN, IMAGENET_STD
+from dataset import IMAGENET_MEAN, IMAGENET_STD
 from models.linknet_efficientnet_b0 import LinkNetEfficientNetB0
 
 
@@ -30,11 +30,11 @@ def main() -> None:
     parser.add_argument("image", help="Path to input flower image.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/linknet_efficientnet_b0/models/config.yaml",
+        default="source/image_segmentation/models/linknet_efficientnet_b0/models/kaggle/config.yaml",
     )
     parser.add_argument(
         "--checkpoint",
-        default="source/image_segmentation/linknet_efficientnet_b0/models/best_model.pth",
+        default="source/image_segmentation/models/linknet_efficientnet_b0/models/kaggle/best_model.pth",
     )
     parser.add_argument("--output", default=None)
     parser.add_argument("--threshold", type=float, default=0.5)
