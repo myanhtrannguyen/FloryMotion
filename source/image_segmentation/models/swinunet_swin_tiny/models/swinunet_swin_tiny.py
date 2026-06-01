@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-from vision_transformer import SwinUnet
+from models.vision_transformer import SwinUnet
 
 from types import SimpleNamespace
 

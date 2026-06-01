@@ -123,7 +123,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Train Swin-UNet with Swin-Tiny backbone.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/swinunet_swin_tiny/models/config.yaml",
+        default="source/image_segmentation/swinunet_swin_tiny/config.yaml",
     )
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--resume", default=None)

@@ -9,7 +9,7 @@ import torch
 import yaml
 from torch.utils.data import DataLoader
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -23,11 +23,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluate U2-Net Small checkpoint.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/u2net_small/models/config.yaml",
+        default="source/image_segmentation/u2net_small/config.yaml",
     )
     parser.add_argument(
         "--checkpoint",
-        default="source/image_segmentation/u2net_small/models/best_model.pth",
+        default="source/image_segmentation/u2net_small/best_model.pth",
     )
     parser.add_argument("--split", default="test", choices=["train", "val", "test"])
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
