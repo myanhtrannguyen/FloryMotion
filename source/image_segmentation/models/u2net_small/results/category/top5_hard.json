@@ -1,0 +1,37 @@
+{
+  "dice":{
+    "wild pansy":0.6330221561,
+    "balloon flower":0.6115432718,
+    "grape hyacinth":0.5225017345,
+    "bolero deep blue":0.5056634467,
+    "stemless gentian":0.4045563163
+  },
+  "iou":{
+    "wild pansy":0.4743615182,
+    "balloon flower":0.4848894592,
+    "grape hyacinth":0.3670866149,
+    "bolero deep blue":0.4369453057,
+    "stemless gentian":0.3070228497
+  },
+  "hd95":{
+    "wild pansy":71.0978766547,
+    "balloon flower":71.6259620667,
+    "grape hyacinth":57.4697914124,
+    "bolero deep blue":70.4622974396,
+    "stemless gentian":65.8661378225
+  },
+  "boundary_f_score":{
+    "wild pansy":0.3828051835,
+    "balloon flower":0.4593587004,
+    "grape hyacinth":0.6022472772,
+    "bolero deep blue":0.3504856183,
+    "stemless gentian":0.380744981
+  },
+  "precision":{
+    "wild pansy":0.5546092144,
+    "balloon flower":0.4888867948,
+    "grape hyacinth":0.3742509959,
+    "bolero deep blue":0.4371344463,
+    "stemless gentian":0.4044579119
+  }
+}

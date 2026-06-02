@@ -1,5 +1,5 @@
 data_root: data/OxfordFlowers102
-output_dir: source/image_segmentation/u2net_small
+output_dir: source\image_segmentation\models\u2net_small\models
 image_size: 256
 batch_size: 8
 epochs: 50

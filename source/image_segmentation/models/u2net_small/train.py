@@ -14,14 +14,14 @@ from torch.optim import AdamW
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from source.image_segmentation.dataset import OxfordFlowersSegmentation
 from source.image_segmentation.losses import BCEDiceLoss
-from source.image_segmentation.metric import compute_all_metrics
-from models.u2net_small import U2NetSmall
+from source.image_segmentation.metrics import compute_all_metrics
+from source.image_segmentation.models.u2net_small.models.u2net_small import U2NetSmall
 
 
 def set_seed(seed: int) -> None:
@@ -138,10 +138,10 @@ def save_checkpoint(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Train LinkNet with EfficientNet-B0 backbone.")
+    parser = argparse.ArgumentParser(description="Train U2-Net Small.")
     parser.add_argument(
         "--config",
-        default="source/image_segmentation/u2net_small/config.yaml",
+        default="source/image_segmentation/models/u2net_small/models/config.yaml",
     )
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--resume", default=None)
