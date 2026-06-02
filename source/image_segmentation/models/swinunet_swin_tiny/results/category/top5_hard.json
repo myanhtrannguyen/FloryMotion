@@ -1,0 +1,37 @@
+{
+  "dice":{
+    "grape hyacinth":0.6800340411,
+    "ball moss":0.6333094336,
+    "bolero deep blue":0.632554615,
+    "alpine sea holly":0.5565117102,
+    "stemless gentian":0.4660051963
+  },
+  "iou":{
+    "grape hyacinth":0.5254398396,
+    "ball moss":0.5529941361,
+    "bolero deep blue":0.5456324823,
+    "alpine sea holly":0.46344649,
+    "stemless gentian":0.3652463236
+  },
+  "hd95":{
+    "grape hyacinth":11.5445868174,
+    "ball moss":67.662197113,
+    "bolero deep blue":24.2653136253,
+    "alpine sea holly":56.5762629509,
+    "stemless gentian":46.9834206104
+  },
+  "boundary_f_score":{
+    "grape hyacinth":0.8209796648,
+    "ball moss":0.5212834223,
+    "bolero deep blue":0.649305894,
+    "alpine sea holly":0.4411319659,
+    "stemless gentian":0.4779793059
+  },
+  "precision":{
+    "grape hyacinth":0.7230253542,
+    "ball moss":0.6061700977,
+    "bolero deep blue":0.5891101652,
+    "alpine sea holly":0.5734469697,
+    "stemless gentian":0.6052946598
+  }
+}

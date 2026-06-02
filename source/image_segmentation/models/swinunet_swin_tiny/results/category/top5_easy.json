@@ -1,0 +1,37 @@
+{
+  "dice":{
+    "mexican aster":0.9925381304,
+    "buttercup":0.991699304,
+    "marigold":0.9904145937,
+    "english marigold":0.9897868401,
+    "corn poppy":0.9893148818
+  },
+  "iou":{
+    "mexican aster":0.9852067876,
+    "buttercup":0.9835570807,
+    "marigold":0.9810401781,
+    "english marigold":0.9798790755,
+    "corn poppy":0.978949662
+  },
+  "hd95":{
+    "mexican aster":1.5606601536,
+    "buttercup":1.4906617403,
+    "marigold":1.8747293609,
+    "english marigold":11.5990697145,
+    "corn poppy":7.7558684945
+  },
+  "boundary_f_score":{
+    "mexican aster":0.9661952336,
+    "buttercup":0.9804954828,
+    "marigold":0.9630621618,
+    "english marigold":0.9549156697,
+    "corn poppy":0.9522903049
+  },
+  "precision":{
+    "mexican aster":0.9917029779,
+    "buttercup":0.9917528361,
+    "marigold":0.9851395489,
+    "english marigold":0.9913317275,
+    "corn poppy":0.9934265877
+  }
+}
