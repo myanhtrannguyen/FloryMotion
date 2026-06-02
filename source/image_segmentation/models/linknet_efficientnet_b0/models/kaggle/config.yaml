@@ -10,4 +10,5 @@ early_stopping_patience: 10
 num_workers: 2
 seed: 42
 log_interval: 25
+concat_input: true
 encoder_weights: null
