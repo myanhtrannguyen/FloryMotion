@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+from html import parser
 import json
 import random
 import sys
@@ -14,7 +15,7 @@ from torch.optim import AdamW
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
-<<<<<<<< HEAD:source/image_segmentation/models/unet_efficientnet_b0/train.py
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SCRIPT_DIR = Path(__file__).resolve().parent
 UNET_DIR = PROJECT_ROOT / "image_segmentation" / "unet_efficientnet_b0"
@@ -27,18 +28,8 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from dataset import OxfordFlowersSegmentation
 from losses import BCEDiceLoss
-from metric import compute_all_metrics
+from metrics import compute_all_metrics
 from models.unet_efficientnet_b0 import UNetEfficientNetB0
-========
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
-from source.image_segmentation.dataset import OxfordFlowersSegmentation
-from source.image_segmentation.losses import BCEDiceLoss
-from source.image_segmentation.metric import compute_all_metrics
-from models.swinunet_swin_tiny import SwinUNetTiny
->>>>>>>> e2b2c1012c1004ec13cfcc8d00bb723760914b88:source/image_segmentation/models/swinunet_swin_tiny/train.py
 
 
 def set_seed(seed: int) -> None:
@@ -215,15 +206,19 @@ def resume_if_available(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Train Swin-UNet with Swin-Tiny backbone.")
+    parser = argparse.ArgumentParser(description="Train U-Net with EfficientNet-B0 backbone.")
     parser.add_argument(
         "--config",
-<<<<<<<< HEAD:source/image_segmentation/models/unet_efficientnet_b0/train.py
-        default="source/image_segmentation/unet_efficientnet_b0/models/local/config.yaml",
-========
-        default="source/image_segmentation/swinunet_swin_tiny/config.yaml",
->>>>>>>> e2b2c1012c1004ec13cfcc8d00bb723760914b88:source/image_segmentation/models/swinunet_swin_tiny/train.py
+        default="source/image_segmentation/models/unet_efficientnet_b0/models/local/config.yaml",
     )
+    parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+
+    parser.add_argument(
+        "--config",
+        default="source/image_segmentation/models/unet_efficientnet_b0/models/local/config.yaml",
+    )
+    parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--resume", default=None)
     args = parser.parse_args()
@@ -280,7 +275,13 @@ def main() -> None:
         pin_memory=device.type == "cuda",
     )
 
-    model = SwinUNetTiny().to(device)
+    model = UNetEfficientNetB0(
+        num_classes=1,
+        concat_input=bool(config.get("concat_input", True)),
+    ).to(device)
+    encoder_weights = config.get("encoder_weights")
+    if encoder_weights:
+        model.load_encoder_weights(str(encoder_weights), strict=False)
 
     criterion = BCEDiceLoss(dice_weight=float(config["dice_weight"]))
     optimizer = AdamW(
@@ -289,7 +290,6 @@ def main() -> None:
         weight_decay=float(config["weight_decay"]),
     )
     scheduler = ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=3)
-<<<<<<<< HEAD:source/image_segmentation/models/unet_efficientnet_b0/train.py
 
     history, start_epoch, best_dice, epochs_without_improvement = resume_if_available(
         output_dir,
@@ -306,13 +306,6 @@ def main() -> None:
             flush=True,
         )
         return
-========
-    
-    start_epoch = 1
-    best_dice = -1.0
-    epochs_without_improvement = 0
-    history = []
->>>>>>>> e2b2c1012c1004ec13cfcc8d00bb723760914b88:source/image_segmentation/models/swinunet_swin_tiny/train.py
 
     history_file = output_dir / "history.json"
 

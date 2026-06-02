@@ -67,6 +67,14 @@ augmented/
 masks_generated/
 
 # =========================
+# Model checkpoints generated
+# =========================
+source/image_segmentation/models/unet_efficientnet_b0/models/**/last_model.pth
+source/image_segmentation/models/linknet_efficientnet_b0/models/**/last_model.pth
+source/image_style_tranform/models/cartoon_gan/**/last_model.pth
+source/image_style_tranform/models/cartoon_gan/**/checkpoints/
+
+# =========================
 # Large media files
 # =========================
 *.mp4

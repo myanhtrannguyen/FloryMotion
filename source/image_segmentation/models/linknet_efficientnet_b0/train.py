@@ -22,7 +22,7 @@ for path in (REPO_ROOT, SOURCE_ROOT):
 
 from dataset import OxfordFlowersSegmentation
 from losses import BCEDiceLoss
-from metric import compute_all_metrics
+from metrics import compute_all_metrics
 from models.linknet_efficientnet_b0 import LinkNetEfficientNetB0
 
 
