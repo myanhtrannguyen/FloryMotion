@@ -71,7 +71,7 @@ masks_generated/
 # =========================
 source/image_segmentation/models/unet_efficientnet_b0/models/**/last_model.pth
 source/image_segmentation/models/linknet_efficientnet_b0/models/**/last_model.pth
-source/image_style_tranform/models/cartoon_gan/**/best_model.pth
+# source/image_style_tranform/models/cartoon_gan/**/best_model.pth
 source/image_style_tranform/models/cartoon_gan/**/last_model.pth
 source/image_style_tranform/models/cartoon_gan/**/checkpoints/
 source/image_style_tranform/models/cartoon_gan/**/eval_outputs/
