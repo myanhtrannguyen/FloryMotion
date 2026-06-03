@@ -1,0 +1,596 @@
+{
+  "class_label": 83,
+  "flower_name": "hibiscus",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "tight conical",
+      "bud_or_flower_state": "closed",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "none",
+        "shape": "pointed",
+        "orientation": "vertical",
+        "opening_degree": "0",
+        "curvature": "none",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "deep green",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "fully visible",
+        "position": "encasing bud",
+        "orientation": "upward",
+        "shape": "lanceolate",
+        "color": "dark green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "enclosed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "subtle swelling",
+      "appearance_guidance_for_generation": "tight green bud",
+      "negative_constraints": "no petals visible"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom",
+      "overall_flower_shape": "rounded cone",
+      "bud_or_flower_state": "swelling",
+      "petal_description": {
+        "visibility": "faintly visible at tip",
+        "outer_petals": "tightly packed",
+        "inner_petals": "hidden",
+        "shape": "ovoid",
+        "orientation": "vertical",
+        "opening_degree": "5",
+        "curvature": "slight",
+        "edge_shape": "smooth",
+        "texture": "smooth",
+        "color_transition": "hint of petal color at apex",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "tight",
+        "orientation": "slightly spreading",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "tightly compressed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening base",
+      "motion_guidance_for_animation": "gradual volumetric increase",
+      "appearance_guidance_for_generation": "bud tip showing color",
+      "negative_constraints": "no open petals"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "initial opening",
+      "overall_flower_shape": "loosening cone",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "visible at apex",
+        "outer_petals": "unfurling",
+        "inner_petals": "hidden",
+        "shape": "conical",
+        "orientation": "upward",
+        "opening_degree": "15",
+        "curvature": "convex",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "vibrant petal color emerging",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "spreading",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "downward spread"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "deeply recessed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening top",
+      "motion_guidance_for_animation": "sepals pulling back",
+      "appearance_guidance_for_generation": "petals beginning to show color",
+      "negative_constraints": "no stamen visible"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "bloom initiation",
+      "overall_flower_shape": "cup",
+      "bud_or_flower_state": "opening",
+      "petal_description": {
+        "visibility": "partially visible",
+        "outer_petals": "unfolding",
+        "inner_petals": "hidden",
+        "shape": "broadening",
+        "orientation": "upward",
+        "opening_degree": "30",
+        "curvature": "concave",
+        "edge_shape": "slightly ruffled",
+        "texture": "soft",
+        "color_transition": "saturated color",
+        "motion_direction": "unfolding"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "faintly visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "emerging"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "revealing stamen column",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "cup-like",
+      "motion_guidance_for_animation": "petals separating",
+      "appearance_guidance_for_generation": "stamen column tip visible",
+      "negative_constraints": "no full petal spread"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "active bloom",
+      "overall_flower_shape": "broad cup",
+      "bud_or_flower_state": "half-open",
+      "petal_description": {
+        "visibility": "mostly visible",
+        "outer_petals": "spreading",
+        "inner_petals": "unfurling",
+        "shape": "broad",
+        "orientation": "diagonal",
+        "opening_degree": "60",
+        "curvature": "curved",
+        "edge_shape": "ruffled",
+        "texture": "delicate",
+        "color_transition": "vibrant",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "fully revealed"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "revealed"
+      },
+      "flower_center_description": "stamen column prominent",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals expanding outward",
+      "appearance_guidance_for_generation": "stamen and stigma visible",
+      "negative_constraints": "no wilt"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "active bloom",
+      "overall_flower_shape": "wide bowl",
+      "bud_or_flower_state": "half-open",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "broad",
+        "inner_petals": "visible",
+        "shape": "broad",
+        "orientation": "horizontal",
+        "opening_degree": "90",
+        "curvature": "curved",
+        "edge_shape": "ruffled",
+        "texture": "soft",
+        "color_transition": "vibrant",
+        "motion_direction": "expanding"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "stamen column fully exposed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "circular",
+      "motion_guidance_for_animation": "petals flattening",
+      "appearance_guidance_for_generation": "vibrant open hibiscus",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "flat disc",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "broad",
+        "orientation": "flat",
+        "opening_degree": "120",
+        "curvature": "flat",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "saturated",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "stamen column fully exposed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "circular",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "peak bloom hibiscus",
+      "negative_constraints": "no drooping"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "flat disc",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "broad",
+        "orientation": "flat",
+        "opening_degree": "120",
+        "curvature": "flat",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "saturated",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "stamen column fully exposed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "circular",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "peak bloom hibiscus",
+      "negative_constraints": "no drooping"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "slightly drooping",
+      "bud_or_flower_state": "mature",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "slightly drooping",
+        "inner_petals": "slightly drooping",
+        "shape": "broad",
+        "orientation": "downward",
+        "opening_degree": "100",
+        "curvature": "convex",
+        "edge_shape": "slightly wilted",
+        "texture": "less vibrant",
+        "color_transition": "fading",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "stamen column exposed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "petals sagging",
+      "appearance_guidance_for_generation": "slightly aged hibiscus",
+      "negative_constraints": "no petal fall"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "curling",
+        "inner_petals": "curling",
+        "shape": "wilted",
+        "orientation": "downward",
+        "opening_degree": "80",
+        "curvature": "curled",
+        "edge_shape": "shriveled",
+        "texture": "dry",
+        "color_transition": "dull",
+        "motion_direction": "inward curl"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "brownish green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "stamen column exposed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "petals curling",
+      "appearance_guidance_for_generation": "fading hibiscus",
+      "negative_constraints": "no petal fall"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "shriveled",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "shriveled",
+        "inner_petals": "shriveled",
+        "shape": "irregular",
+        "orientation": "downward",
+        "opening_degree": "40",
+        "curvature": "curled",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "brownish",
+        "motion_direction": "inward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "brown",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "red",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "stamen column exposed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "shriveled",
+      "motion_guidance_for_animation": "petals shriveling",
+      "appearance_guidance_for_generation": "wilted hibiscus",
+      "negative_constraints": "no petal fall"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "partially visible",
+        "outer_petals": "falling",
+        "inner_petals": "falling",
+        "shape": "collapsed",
+        "orientation": "downward",
+        "opening_degree": "0",
+        "curvature": "none",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "brown",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "brown",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "tip of stamen",
+        "shape": "stigma pads",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "collapsed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "collapsed",
+      "motion_guidance_for_animation": "petals falling",
+      "appearance_guidance_for_generation": "wilted hibiscus",
+      "negative_constraints": "no fresh petals"
+    }
+  ]
+}

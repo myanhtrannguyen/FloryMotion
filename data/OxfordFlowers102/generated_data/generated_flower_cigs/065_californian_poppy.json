@@ -1,0 +1,596 @@
+{
+  "class_label": 65,
+  "flower_name": "californian poppy",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "conical, upright",
+      "bud_or_flower_state": "tightly closed",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "enclosed",
+        "inner_petals": "enclosed",
+        "shape": "conical",
+        "orientation": "vertical",
+        "opening_degree": "0",
+        "curvature": "none",
+        "edge_shape": "pointed",
+        "texture": "smooth",
+        "color_transition": "green",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "covering petals",
+        "orientation": "vertical",
+        "shape": "conical cap",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "hidden",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "static",
+      "appearance_guidance_for_generation": "tight green conical bud",
+      "negative_constraints": "no petals visible"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom",
+      "overall_flower_shape": "swollen conical",
+      "bud_or_flower_state": "swelling",
+      "petal_description": {
+        "visibility": "minimal",
+        "outer_petals": "tightly packed",
+        "inner_petals": "hidden",
+        "shape": "swollen",
+        "orientation": "vertical",
+        "opening_degree": "5",
+        "curvature": "slight",
+        "edge_shape": "pointed",
+        "texture": "smooth",
+        "color_transition": "green to hint of orange",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "base",
+        "orientation": "loosening",
+        "shape": "conical",
+        "color": "green",
+        "motion_direction": "slight outward shift"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "hidden",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "slight increase in width",
+      "motion_guidance_for_animation": "subtle expansion",
+      "appearance_guidance_for_generation": "swelling bud with slight orange tint at tip",
+      "negative_constraints": "no full petal exposure"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "initial bloom",
+      "overall_flower_shape": "splitting",
+      "bud_or_flower_state": "opening",
+      "petal_description": {
+        "visibility": "partial",
+        "outer_petals": "unfolding",
+        "inner_petals": "hidden",
+        "shape": "folded",
+        "orientation": "upward",
+        "opening_degree": "20",
+        "curvature": "curved",
+        "edge_shape": "wrinkled",
+        "texture": "satin",
+        "color_transition": "bright orange",
+        "motion_direction": "unfolding outward"
+      },
+      "sepal_description": {
+        "visibility": "decreasing",
+        "position": "falling away",
+        "orientation": "downward",
+        "shape": "loose",
+        "color": "green",
+        "motion_direction": "dropping"
+      },
+      "stamen_description": {
+        "visibility": "minimal",
+        "position": "center",
+        "shape": "cluster",
+        "color": "yellow",
+        "motion_or_reveal": "emerging"
+      },
+      "pistil_description": {
+        "visibility": "minimal",
+        "position": "center",
+        "shape": "columnar",
+        "color": "greenish",
+        "motion_or_reveal": "emerging"
+      },
+      "flower_center_description": "yellow stamen cluster visible",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "becoming irregular as sepals fall",
+      "motion_guidance_for_animation": "sepals dropping, petals unfolding",
+      "appearance_guidance_for_generation": "vibrant orange petals emerging from green sepals",
+      "negative_constraints": "no fully flat petals"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "bloom initiation",
+      "overall_flower_shape": "cup-like",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "unfolding",
+        "inner_petals": "partially visible",
+        "shape": "fan-like",
+        "orientation": "upward and outward",
+        "opening_degree": "45",
+        "curvature": "concave",
+        "edge_shape": "wavy",
+        "texture": "satin",
+        "color_transition": "deep orange to yellow base",
+        "motion_direction": "spreading"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "shriveled",
+        "color": "brownish green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "yellow",
+        "motion_or_reveal": "expanding"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "cylindrical",
+        "color": "green",
+        "motion_or_reveal": "exposed"
+      },
+      "flower_center_description": "bright yellow stamens surrounding central pistil",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "cup shape forming",
+      "motion_guidance_for_animation": "petals spreading outward",
+      "appearance_guidance_for_generation": "cup-shaped bloom with visible stamen cluster",
+      "negative_constraints": "no flat petals"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "active growth",
+      "overall_flower_shape": "broadening cup",
+      "bud_or_flower_state": "opening",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "unfurling",
+        "inner_petals": "visible",
+        "shape": "rounded",
+        "orientation": "outward",
+        "opening_degree": "90",
+        "curvature": "gentle",
+        "edge_shape": "wavy",
+        "texture": "satin",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "hidden",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "cluster",
+        "color": "yellow",
+        "motion_or_reveal": "spreading"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "dense yellow center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals continuing to spread",
+      "appearance_guidance_for_generation": "vibrant orange poppy with cup shape",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "active growth",
+      "overall_flower_shape": "shallow bowl",
+      "bud_or_flower_state": "half open",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "spreading",
+        "inner_petals": "overlapping",
+        "shape": "fan-like",
+        "orientation": "outward",
+        "opening_degree": "135",
+        "curvature": "flat to concave",
+        "edge_shape": "wavy",
+        "texture": "satin",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "cluster",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "prominent yellow stamen disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "bowl-like",
+      "motion_guidance_for_animation": "petals flattening",
+      "appearance_guidance_for_generation": "half-open poppy showing yellow center",
+      "negative_constraints": "no drooping"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak growth",
+      "overall_flower_shape": "wide bowl",
+      "bud_or_flower_state": "near full",
+      "petal_description": {
+        "visibility": "full",
+        "outer_petals": "spread",
+        "inner_petals": "spread",
+        "shape": "fan-like",
+        "orientation": "outward",
+        "opening_degree": "160",
+        "curvature": "flat",
+        "edge_shape": "wavy",
+        "texture": "satin",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "cluster",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "bright yellow center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "wide circle",
+      "motion_guidance_for_animation": "petals reaching full spread",
+      "appearance_guidance_for_generation": "wide open poppy",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak",
+      "overall_flower_shape": "flat disc",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "full",
+        "outer_petals": "flat",
+        "inner_petals": "flat",
+        "shape": "fan-like",
+        "orientation": "horizontal",
+        "opening_degree": "180",
+        "curvature": "none",
+        "edge_shape": "wavy",
+        "texture": "satin",
+        "color_transition": "vibrant orange",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "cluster",
+        "color": "yellow",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "full yellow center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "flat circle",
+      "motion_guidance_for_animation": "static peak bloom",
+      "appearance_guidance_for_generation": "perfectly open poppy",
+      "negative_constraints": "no curling"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "flat disc",
+      "bud_or_flower_state": "mature",
+      "petal_description": {
+        "visibility": "full",
+        "outer_petals": "flat",
+        "inner_petals": "flat",
+        "shape": "fan-like",
+        "orientation": "horizontal",
+        "opening_degree": "180",
+        "curvature": "slight downward",
+        "edge_shape": "wavy",
+        "texture": "satin",
+        "color_transition": "fading orange",
+        "motion_direction": "slight drooping"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "cluster",
+        "color": "fading yellow",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "yellow center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "slight drooping at edges",
+      "motion_guidance_for_animation": "subtle drooping",
+      "appearance_guidance_for_generation": "mature poppy",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "full",
+        "outer_petals": "drooping",
+        "inner_petals": "drooping",
+        "shape": "wilted",
+        "orientation": "downward",
+        "opening_degree": "150",
+        "curvature": "curved",
+        "edge_shape": "wrinkled",
+        "texture": "dull",
+        "color_transition": "pale orange",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "withered",
+        "color": "brownish yellow",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "darkening center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "petals curling downward",
+      "appearance_guidance_for_generation": "fading poppy",
+      "negative_constraints": "no petal loss"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "shriveled",
+      "bud_or_flower_state": "drying",
+      "petal_description": {
+        "visibility": "partial",
+        "outer_petals": "curled",
+        "inner_petals": "curled",
+        "shape": "shriveled",
+        "orientation": "downward",
+        "opening_degree": "90",
+        "curvature": "tightly curved",
+        "edge_shape": "brittle",
+        "texture": "dry",
+        "color_transition": "brownish orange",
+        "motion_direction": "inward curling"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "withered center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "shrunken",
+      "motion_guidance_for_animation": "petals curling and drying",
+      "appearance_guidance_for_generation": "shriveled poppy",
+      "negative_constraints": "no fresh color"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "wilt",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "minimal",
+        "outer_petals": "falling",
+        "inner_petals": "falling",
+        "shape": "withered",
+        "orientation": "downward",
+        "opening_degree": "0",
+        "curvature": "extreme",
+        "edge_shape": "brittle",
+        "texture": "dry",
+        "color_transition": "brown",
+        "motion_direction": "falling"
+      },
+      "sepal_description": {
+        "visibility": "none",
+        "position": "none",
+        "orientation": "none",
+        "shape": "none",
+        "color": "none",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "falling"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "columnar",
+        "color": "green",
+        "motion_or_reveal": "exposed"
+      },
+      "flower_center_description": "exposed pistil",
+      "symmetry_and_spatial_arrangement": "irregular",
+      "silhouette_change": "collapsed",
+      "motion_guidance_for_animation": "petals detaching",
+      "appearance_guidance_for_generation": "wilted poppy with falling petals",
+      "negative_constraints": "no vibrant colors"
+    }
+  ]
+}

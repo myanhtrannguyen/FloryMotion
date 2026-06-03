@@ -93,34 +93,35 @@ def ssim_score(pred: ArrayLike, target: ArrayLike, window_size: int = 11) -> flo
         ]
         return float(np.mean(scores))
     except ImportError:
-        return _ssim_numpy(pred_np, target_np, window_size=window_size)
+        print("Warning: skimage is not installed, falling back to a simple SSIM approximation. For accurate SSIM, install scikit-image with `pip install scikit-image`.")
+        # return _ssim_numpy(pred_np, target_np, window_size=window_size)
 
 
-def _ssim_numpy(pred: np.ndarray, target: np.ndarray, window_size: int = 11) -> float:
-    sigma = 1.5
-    c1 = 0.01**2
-    c2 = 0.03**2
-    scores = []
+# def _ssim_numpy(pred: np.ndarray, target: np.ndarray, window_size: int = 11) -> float:
+#     sigma = 1.5
+#     c1 = 0.01**2
+#     c2 = 0.03**2
+#     scores = []
 
-    for p, t in zip(pred, target):
-        per_channel = []
-        for channel in range(3):
-            x = p[:, :, channel]
-            y = t[:, :, channel]
-            mu_x = ndimage.gaussian_filter(x, sigma=sigma, truncate=((window_size - 1) / 2) / sigma)
-            mu_y = ndimage.gaussian_filter(y, sigma=sigma, truncate=((window_size - 1) / 2) / sigma)
-            mu_x2 = mu_x * mu_x
-            mu_y2 = mu_y * mu_y
-            mu_xy = mu_x * mu_y
-            sigma_x2 = ndimage.gaussian_filter(x * x, sigma=sigma) - mu_x2
-            sigma_y2 = ndimage.gaussian_filter(y * y, sigma=sigma) - mu_y2
-            sigma_xy = ndimage.gaussian_filter(x * y, sigma=sigma) - mu_xy
-            numerator = (2.0 * mu_xy + c1) * (2.0 * sigma_xy + c2)
-            denominator = (mu_x2 + mu_y2 + c1) * (sigma_x2 + sigma_y2 + c2)
-            per_channel.append(np.mean(numerator / (denominator + 1e-12)))
-        scores.append(float(np.mean(per_channel)))
+#     for p, t in zip(pred, target):
+#         per_channel = []
+#         for channel in range(3):
+#             x = p[:, :, channel]
+#             y = t[:, :, channel]
+#             mu_x = ndimage.gaussian_filter(x, sigma=sigma, truncate=((window_size - 1) / 2) / sigma)
+#             mu_y = ndimage.gaussian_filter(y, sigma=sigma, truncate=((window_size - 1) / 2) / sigma)
+#             mu_x2 = mu_x * mu_x
+#             mu_y2 = mu_y * mu_y
+#             mu_xy = mu_x * mu_y
+#             sigma_x2 = ndimage.gaussian_filter(x * x, sigma=sigma) - mu_x2
+#             sigma_y2 = ndimage.gaussian_filter(y * y, sigma=sigma) - mu_y2
+#             sigma_xy = ndimage.gaussian_filter(x * y, sigma=sigma) - mu_xy
+#             numerator = (2.0 * mu_xy + c1) * (2.0 * sigma_xy + c2)
+#             denominator = (mu_x2 + mu_y2 + c1) * (sigma_x2 + sigma_y2 + c2)
+#             per_channel.append(np.mean(numerator / (denominator + 1e-12)))
+#         scores.append(float(np.mean(per_channel)))
 
-    return float(np.mean(scores))
+#     return float(np.mean(scores))
 
 
 def edge_similarity(pred: ArrayLike, target: ArrayLike, eps: float = 1e-8) -> float:
