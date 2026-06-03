@@ -1,0 +1,596 @@
+{
+  "class_label": 59,
+  "flower_name": "orange dahlia",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "tightly coiled spherical bud",
+      "bud_or_flower_state": "closed bud",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "not visible",
+        "shape": "globular",
+        "orientation": "upward",
+        "opening_degree": "0%",
+        "curvature": "inward",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "deep green to faint orange",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "enclosing the bud",
+        "orientation": "upward",
+        "shape": "leaf-like",
+        "color": "deep green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "compact center",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "subtle pulse",
+      "appearance_guidance_for_generation": "tight green bud with hints of orange",
+      "negative_constraints": "no visible petals"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom",
+      "overall_flower_shape": "swollen sphere",
+      "bud_or_flower_state": "swelling bud",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "tightly packed",
+        "inner_petals": "not visible",
+        "shape": "rounded",
+        "orientation": "upward",
+        "opening_degree": "5%",
+        "curvature": "inward",
+        "edge_shape": "smooth",
+        "texture": "smooth",
+        "color_transition": "brightening orange",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "loosening",
+        "orientation": "slightly outward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "tightly compressed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "slight expansion",
+      "motion_guidance_for_animation": "gradual swelling",
+      "appearance_guidance_for_generation": "vibrant orange color appearing at the tip",
+      "negative_constraints": "no open petals"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "initial opening",
+      "overall_flower_shape": "bud with crown",
+      "bud_or_flower_state": "bud opening",
+      "petal_description": {
+        "visibility": "partial",
+        "outer_petals": "beginning to unfurl",
+        "inner_petals": "hidden",
+        "shape": "curved",
+        "orientation": "upward",
+        "opening_degree": "15%",
+        "curvature": "outward curl",
+        "edge_shape": "rounded",
+        "texture": "velvety",
+        "color_transition": "vivid orange",
+        "motion_direction": "unfolding"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "peeling back",
+        "orientation": "downward",
+        "shape": "curved",
+        "color": "green",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "tight core",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening at the top",
+      "motion_guidance_for_animation": "sepals peeling back",
+      "appearance_guidance_for_generation": "vivid orange petals emerging from green sepals",
+      "negative_constraints": "no central disk visible"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "early bloom",
+      "overall_flower_shape": "cup-shaped",
+      "bud_or_flower_state": "early bloom",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "unfurling",
+        "inner_petals": "tightly packed",
+        "shape": "oval",
+        "orientation": "outward",
+        "opening_degree": "30%",
+        "curvature": "outward",
+        "edge_shape": "rounded",
+        "texture": "velvety",
+        "color_transition": "deep orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "base of flower",
+        "orientation": "downward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "tightly packed core",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "cup-like silhouette",
+      "motion_guidance_for_animation": "petals spreading outward",
+      "appearance_guidance_for_generation": "orange dahlia petals starting to show shape",
+      "negative_constraints": "no stamens visible"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "mid-bloom",
+      "overall_flower_shape": "broad cup",
+      "bud_or_flower_state": "blooming",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "unfurling",
+        "shape": "broad oval",
+        "orientation": "outward",
+        "opening_degree": "50%",
+        "curvature": "outward",
+        "edge_shape": "slightly pointed",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "tiny filaments",
+        "color": "yellow",
+        "motion_or_reveal": "beginning to peek"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "tiny",
+        "color": "yellow",
+        "motion_or_reveal": "beginning to peek"
+      },
+      "flower_center_description": "center beginning to reveal",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals moving outward",
+      "appearance_guidance_for_generation": "orange dahlia with visible center",
+      "negative_constraints": "no wilted petals"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "mid-bloom",
+      "overall_flower_shape": "hemispherical",
+      "bud_or_flower_state": "blooming",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "opening",
+        "shape": "broad oval",
+        "orientation": "outward",
+        "opening_degree": "65%",
+        "curvature": "outward",
+        "edge_shape": "pointed",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "filaments",
+        "color": "yellow",
+        "motion_or_reveal": "revealing"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "revealing"
+      },
+      "flower_center_description": "yellow disk center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "hemispherical",
+      "motion_guidance_for_animation": "petals spreading",
+      "appearance_guidance_for_generation": "orange dahlia with yellow center",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "flat-topped sphere",
+      "bud_or_flower_state": "blooming",
+      "petal_description": {
+        "visibility": "very high",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "broad oval",
+        "orientation": "outward",
+        "opening_degree": "85%",
+        "curvature": "outward",
+        "edge_shape": "pointed",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filaments",
+        "color": "yellow",
+        "motion_or_reveal": "fully revealed"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "fully revealed"
+      },
+      "flower_center_description": "fully visible yellow disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "flat-topped",
+      "motion_guidance_for_animation": "petals fully open",
+      "appearance_guidance_for_generation": "vibrant orange dahlia at peak",
+      "negative_constraints": "no fading"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "flat-topped sphere",
+      "bud_or_flower_state": "fully bloomed",
+      "petal_description": {
+        "visibility": "maximum",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "broad oval",
+        "orientation": "outward",
+        "opening_degree": "100%",
+        "curvature": "outward",
+        "edge_shape": "pointed",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filaments",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "fully visible yellow disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "perfectly bloomed orange dahlia",
+      "negative_constraints": "no movement"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "slightly drooping",
+      "bud_or_flower_state": "mature",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "slightly drooping",
+        "inner_petals": "fully extended",
+        "shape": "broad oval",
+        "orientation": "downward",
+        "opening_degree": "95%",
+        "curvature": "outward",
+        "edge_shape": "pointed",
+        "texture": "slightly dry",
+        "color_transition": "fading orange",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "leaf-like",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filaments",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "yellow disk starting to darken",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "slight drooping",
+      "appearance_guidance_for_generation": "orange dahlia beginning to age",
+      "negative_constraints": "no petal loss"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "drooping",
+        "inner_petals": "curling",
+        "shape": "wilted oval",
+        "orientation": "downward",
+        "opening_degree": "80%",
+        "curvature": "inward curl",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "dull orange",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "brownish-green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "flower_center_description": "darkening disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "petals curling",
+      "appearance_guidance_for_generation": "fading orange dahlia",
+      "negative_constraints": "no petal fall"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "shriveled",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "curling inward",
+        "inner_petals": "shriveled",
+        "shape": "twisted",
+        "orientation": "downward",
+        "opening_degree": "60%",
+        "curvature": "inward curl",
+        "edge_shape": "withered",
+        "texture": "brittle",
+        "color_transition": "brownish-orange",
+        "motion_direction": "inward"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "brown",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "flower_center_description": "shriveled disk",
+      "symmetry_and_spatial_arrangement": "distorted",
+      "silhouette_change": "shrunken",
+      "motion_guidance_for_animation": "petals curling and drying",
+      "appearance_guidance_for_generation": "withered orange dahlia",
+      "negative_constraints": "no fresh petals"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "death",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "falling off",
+        "inner_petals": "shriveled",
+        "shape": "distorted",
+        "orientation": "downward",
+        "opening_degree": "40%",
+        "curvature": "inward curl",
+        "edge_shape": "withered",
+        "texture": "brittle",
+        "color_transition": "brown",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "brown",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "collapsed disk",
+      "symmetry_and_spatial_arrangement": "distorted",
+      "silhouette_change": "collapsed",
+      "motion_guidance_for_animation": "petals dropping",
+      "appearance_guidance_for_generation": "dead orange dahlia",
+      "negative_constraints": "no vibrant colors"
+    }
+  ]
+}

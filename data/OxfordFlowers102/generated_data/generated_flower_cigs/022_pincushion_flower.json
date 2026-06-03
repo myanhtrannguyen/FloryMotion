@@ -1,0 +1,596 @@
+{
+  "class_label": 22,
+  "flower_name": "pincushion flower",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "tight spherical bud",
+      "bud_or_flower_state": "fully closed",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "compressed",
+        "shape": "globular",
+        "orientation": "inward",
+        "opening_degree": "0%",
+        "curvature": "high",
+        "edge_shape": "smooth",
+        "texture": "firm",
+        "color_transition": "pale green",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "enclosing the bud",
+        "orientation": "upward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "compact, invisible",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "static",
+      "motion_guidance_for_animation": "subtle breathing motion",
+      "appearance_guidance_for_generation": "tight green bud, firm texture",
+      "negative_constraints": "no visible petals"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom",
+      "overall_flower_shape": "rounded sphere",
+      "bud_or_flower_state": "swelling",
+      "petal_description": {
+        "visibility": "faintly visible at tips",
+        "outer_petals": "tightly packed",
+        "inner_petals": "swelling",
+        "shape": "globular",
+        "orientation": "inward",
+        "opening_degree": "5%",
+        "curvature": "high",
+        "edge_shape": "smooth",
+        "texture": "tight",
+        "color_transition": "faint lavender hue appearing",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "relaxing",
+        "orientation": "slightly outward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "tightly compressed",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "slight increase in diameter",
+      "motion_guidance_for_animation": "slow expansion of the bud",
+      "appearance_guidance_for_generation": "bud starts to show color at the top",
+      "negative_constraints": "no open petals"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "initial opening",
+      "overall_flower_shape": "loosening sphere",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "visible at apex",
+        "outer_petals": "loosening",
+        "inner_petals": "expanding",
+        "shape": "rounded",
+        "orientation": "upward",
+        "opening_degree": "15%",
+        "curvature": "moderate",
+        "edge_shape": "slightly ruffled",
+        "texture": "softening",
+        "color_transition": "lavender tip, green base",
+        "motion_direction": "upward and outward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "spreading",
+        "orientation": "outward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "emerging",
+        "position": "central",
+        "shape": "thin filaments",
+        "color": "white",
+        "motion_or_reveal": "slow emergence"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "becoming visible",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening at the top",
+      "motion_guidance_for_animation": "sepals fold back, petals push up",
+      "appearance_guidance_for_generation": "sepals clearly separating from bud",
+      "negative_constraints": "no fully exposed center"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "opening",
+      "overall_flower_shape": "hemispherical",
+      "bud_or_flower_state": "opening",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "spreading",
+        "inner_petals": "unfurling",
+        "shape": "lobed",
+        "orientation": "outward",
+        "opening_degree": "30%",
+        "curvature": "moderate",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "vibrant lavender",
+        "motion_direction": "outward radial"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "filamentous",
+        "color": "white",
+        "motion_or_reveal": "extending"
+      },
+      "pistil_description": {
+        "visibility": "emerging",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "white",
+        "motion_or_reveal": "rising"
+      },
+      "flower_center_description": "pincushion center beginning to form",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "flattening top",
+      "motion_guidance_for_animation": "petals unfolding from center",
+      "appearance_guidance_for_generation": "pincushion center is dense and compact",
+      "negative_constraints": "no wilted petals"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "blooming",
+      "overall_flower_shape": "flattened dome",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "opening",
+        "shape": "lobed",
+        "orientation": "horizontal",
+        "opening_degree": "50%",
+        "curvature": "flat",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "deep lavender",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "very low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "white",
+        "motion_or_reveal": "spreading"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "white",
+        "motion_or_reveal": "fully extended"
+      },
+      "flower_center_description": "pincushion texture developing",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "dome shape",
+      "motion_guidance_for_animation": "center expands outward",
+      "appearance_guidance_for_generation": "distinct pincushion center",
+      "negative_constraints": "no drooping"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "blooming",
+      "overall_flower_shape": "dome",
+      "bud_or_flower_state": "half open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "expanding",
+        "shape": "lobed",
+        "orientation": "horizontal",
+        "opening_degree": "70%",
+        "curvature": "flat",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "vibrant lavender",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "minimal",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "white",
+        "motion_or_reveal": "fully visible"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "pincushion center is prominent",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "dome shape",
+      "motion_guidance_for_animation": "center filaments vibrating slightly",
+      "appearance_guidance_for_generation": "pincushion center is textured",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak",
+      "overall_flower_shape": "dome",
+      "bud_or_flower_state": "near full",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "lobed",
+        "orientation": "horizontal",
+        "opening_degree": "90%",
+        "curvature": "flat",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "vibrant lavender",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "minimal",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "fully textured pincushion",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "dome",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "peak bloom, vibrant color",
+      "negative_constraints": "no petal loss"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak",
+      "overall_flower_shape": "dome",
+      "bud_or_flower_state": "full bloom",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "lobed",
+        "orientation": "horizontal",
+        "opening_degree": "100%",
+        "curvature": "flat",
+        "edge_shape": "ruffled",
+        "texture": "velvety",
+        "color_transition": "vibrant lavender",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "minimal",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "fully textured pincushion",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "dome",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "peak bloom, vibrant color",
+      "negative_constraints": "no petal loss"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "dome",
+      "bud_or_flower_state": "mature",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "slightly drooping",
+        "inner_petals": "slightly drooping",
+        "shape": "lobed",
+        "orientation": "slightly downward",
+        "opening_degree": "95%",
+        "curvature": "slight",
+        "edge_shape": "ruffled",
+        "texture": "less velvety",
+        "color_transition": "fading lavender",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "white",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "pincushion center slightly less dense",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "dome",
+      "motion_guidance_for_animation": "slight drooping",
+      "appearance_guidance_for_generation": "color saturation decreasing",
+      "negative_constraints": "no petal fall"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "fading",
+      "overall_flower_shape": "drooping dome",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "drooping",
+        "inner_petals": "wilting",
+        "shape": "lobed",
+        "orientation": "downward",
+        "opening_degree": "80%",
+        "curvature": "inward",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "dull lavender",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "brownish green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "filamentous",
+        "color": "dull white",
+        "motion_or_reveal": "wilting"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "needle-like",
+        "color": "dull white",
+        "motion_or_reveal": "wilting"
+      },
+      "flower_center_description": "pincushion center losing structure",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "petals drooping",
+      "appearance_guidance_for_generation": "color loss, texture change",
+      "negative_constraints": "no petal detachment"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "wilt",
+      "overall_flower_shape": "collapsed dome",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "curled",
+        "inner_petals": "shriveled",
+        "shape": "shriveled",
+        "orientation": "inward",
+        "opening_degree": "40%",
+        "curvature": "high",
+        "edge_shape": "browned",
+        "texture": "brittle",
+        "color_transition": "brownish lavender",
+        "motion_direction": "inward collapse"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "brown",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "collapsing"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "collapsing"
+      },
+      "flower_center_description": "pincushion center collapsing",
+      "symmetry_and_spatial_arrangement": "irregular",
+      "silhouette_change": "shrunken",
+      "motion_guidance_for_animation": "inward collapse",
+      "appearance_guidance_for_generation": "browned edges, shriveled texture",
+      "negative_constraints": "no fresh petals"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "senescent",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "falling",
+        "inner_petals": "detached",
+        "shape": "irregular",
+        "orientation": "downward",
+        "opening_degree": "0%",
+        "curvature": "high",
+        "edge_shape": "withered",
+        "texture": "brittle",
+        "color_transition": "brown",
+        "motion_direction": "falling"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "withered",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "collapsed",
+      "symmetry_and_spatial_arrangement": "asymmetric",
+      "silhouette_change": "shrunken",
+      "motion_guidance_for_animation": "petals falling away",
+      "appearance_guidance_for_generation": "brown, dry, withered flower",
+      "negative_constraints": "no vibrant colors"
+    }
+  ]
+}

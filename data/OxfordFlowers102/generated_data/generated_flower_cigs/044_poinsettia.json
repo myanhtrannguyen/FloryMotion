@@ -1,0 +1,596 @@
+{
+  "class_label": 44,
+  "flower_name": "poinsettia",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "tightly packed conical bud",
+      "bud_or_flower_state": "closed",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "not visible",
+        "shape": "pointed",
+        "orientation": "vertical",
+        "opening_degree": "0",
+        "curvature": "none",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "deep green",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "enveloping",
+        "orientation": "upward",
+        "shape": "lanceolate",
+        "color": "dark green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "compact green core",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "minimal",
+      "motion_guidance_for_animation": "subtle breathing motion",
+      "appearance_guidance_for_generation": "dark green, dense, waxy texture",
+      "negative_constraints": "no red color, no open gaps"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom",
+      "overall_flower_shape": "rounded bud",
+      "bud_or_flower_state": "swelling",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "hidden",
+        "shape": "ovate",
+        "orientation": "upward",
+        "opening_degree": "5",
+        "curvature": "slight",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "green to faint red tip",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "loosening",
+        "orientation": "slightly splayed",
+        "shape": "lanceolate",
+        "color": "dark green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "tightening core",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "slight increase in width",
+      "motion_guidance_for_animation": "slow outward expansion",
+      "appearance_guidance_for_generation": "swollen appearance, green bracts",
+      "negative_constraints": "no visible stamens"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "early bloom",
+      "overall_flower_shape": "star-like bud",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "bracts unfolding",
+        "inner_petals": "hidden",
+        "shape": "lanceolate",
+        "orientation": "spreading",
+        "opening_degree": "20",
+        "curvature": "convex",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "green transitioning to vibrant red",
+        "motion_direction": "unfolding outward"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "fully splayed",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "small yellow dots",
+        "color": "yellow",
+        "motion_or_reveal": "beginning to emerge"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "tiny stalk",
+        "color": "green",
+        "motion_or_reveal": "beginning to emerge"
+      },
+      "flower_center_description": "cyathia starting to show",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "widening significantly",
+      "motion_guidance_for_animation": "bracts unfolding from center",
+      "appearance_guidance_for_generation": "vibrant red color appearing on bracts",
+      "negative_constraints": "no drooping"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "active bloom",
+      "overall_flower_shape": "star-shaped",
+      "bud_or_flower_state": "opening",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts expanding",
+        "inner_petals": "not applicable",
+        "shape": "ovate-lanceolate",
+        "orientation": "spreading",
+        "opening_degree": "45",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "bright red",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "underlying",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "small yellow glands",
+        "color": "yellow",
+        "motion_or_reveal": "becoming visible"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "stalk",
+        "color": "green",
+        "motion_or_reveal": "becoming visible"
+      },
+      "flower_center_description": "cluster of cyathia",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "star shape emerging",
+      "motion_guidance_for_animation": "rapid expansion of bracts",
+      "appearance_guidance_for_generation": "vibrant red bracts, yellow center",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "active bloom",
+      "overall_flower_shape": "broad star",
+      "bud_or_flower_state": "blooming",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts fully expanded",
+        "inner_petals": "not applicable",
+        "shape": "ovate",
+        "orientation": "horizontal",
+        "opening_degree": "70",
+        "curvature": "slight",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "deep red",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "yellow glands",
+        "color": "yellow",
+        "motion_or_reveal": "fully visible"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "stalk",
+        "color": "green",
+        "motion_or_reveal": "fully visible"
+      },
+      "flower_center_description": "prominent cyathia",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "maximum width reached",
+      "motion_guidance_for_animation": "bracts settling into position",
+      "appearance_guidance_for_generation": "rich red bracts, clear yellow center",
+      "negative_constraints": "no curling"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "wide star",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts flat",
+        "inner_petals": "not applicable",
+        "shape": "ovate",
+        "orientation": "horizontal",
+        "opening_degree": "90",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "vibrant red",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "yellow glands",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "stalk",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "vibrant yellow cyathia",
+      "symmetry_and_spatial_arrangement": "perfect radial symmetry",
+      "silhouette_change": "stable",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "vibrant red, healthy",
+      "negative_constraints": "no fading"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "wide star",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts flat",
+        "inner_petals": "not applicable",
+        "shape": "ovate",
+        "orientation": "horizontal",
+        "opening_degree": "90",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "vibrant red",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "yellow glands",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "stalk",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "vibrant yellow cyathia",
+      "symmetry_and_spatial_arrangement": "perfect radial symmetry",
+      "silhouette_change": "stable",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "vibrant red, healthy",
+      "negative_constraints": "no fading"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "wide star",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts flat",
+        "inner_petals": "not applicable",
+        "shape": "ovate",
+        "orientation": "horizontal",
+        "opening_degree": "90",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "vibrant red",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "yellow glands",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "stalk",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "vibrant yellow cyathia",
+      "symmetry_and_spatial_arrangement": "perfect radial symmetry",
+      "silhouette_change": "stable",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "vibrant red, healthy",
+      "negative_constraints": "no fading"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "star",
+      "bud_or_flower_state": "mature",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts slightly drooping",
+        "inner_petals": "not applicable",
+        "shape": "ovate",
+        "orientation": "slightly downward",
+        "opening_degree": "80",
+        "curvature": "slight",
+        "edge_shape": "smooth",
+        "texture": "velvety",
+        "color_transition": "fading red",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "horizontal",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "yellow glands",
+        "color": "faded yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "stalk",
+        "color": "green",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "slightly dull cyathia",
+      "symmetry_and_spatial_arrangement": "slight loss of symmetry",
+      "silhouette_change": "slight drooping",
+      "motion_guidance_for_animation": "slow downward sag",
+      "appearance_guidance_for_generation": "slightly less vibrant red",
+      "negative_constraints": "no petal fall yet"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping star",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "bracts curling",
+        "inner_petals": "not applicable",
+        "shape": "wilted",
+        "orientation": "downward",
+        "opening_degree": "60",
+        "curvature": "inward",
+        "edge_shape": "wrinkled",
+        "texture": "dry",
+        "color_transition": "red turning brown at edges",
+        "motion_direction": "inward and downward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "brownish green",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "flower_center_description": "shriveling cyathia",
+      "symmetry_and_spatial_arrangement": "asymmetric",
+      "silhouette_change": "shrinking",
+      "motion_guidance_for_animation": "bracts curling inward",
+      "appearance_guidance_for_generation": "brown edges, dry texture",
+      "negative_constraints": "no bright red"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "bracts heavily curled",
+        "inner_petals": "not applicable",
+        "shape": "shriveled",
+        "orientation": "downward",
+        "opening_degree": "30",
+        "curvature": "high",
+        "edge_shape": "crinkled",
+        "texture": "brittle",
+        "color_transition": "brown and red",
+        "motion_direction": "inward"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "disappearing"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "disappearing"
+      },
+      "flower_center_description": "collapsed center",
+      "symmetry_and_spatial_arrangement": "asymmetric",
+      "silhouette_change": "collapsed",
+      "motion_guidance_for_animation": "bracts curling tightly",
+      "appearance_guidance_for_generation": "brown, brittle, dry",
+      "negative_constraints": "no upright petals"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "death",
+      "overall_flower_shape": "collapsed mass",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "bracts falling",
+        "inner_petals": "not applicable",
+        "shape": "withered",
+        "orientation": "downward",
+        "opening_degree": "0",
+        "curvature": "extreme",
+        "edge_shape": "ragged",
+        "texture": "brittle",
+        "color_transition": "dark brown",
+        "motion_direction": "falling"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "dark brown",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "gone"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "gone"
+      },
+      "flower_center_description": "dark debris",
+      "symmetry_and_spatial_arrangement": "none",
+      "silhouette_change": "minimal",
+      "motion_guidance_for_animation": "bracts drooping and falling",
+      "appearance_guidance_for_generation": "dark brown, dead plant matter",
+      "negative_constraints": "no green or red"
+    }
+  ]
+}

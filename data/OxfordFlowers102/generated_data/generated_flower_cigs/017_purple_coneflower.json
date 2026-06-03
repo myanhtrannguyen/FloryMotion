@@ -1,0 +1,596 @@
+{
+  "class_label": 17,
+  "flower_name": "purple coneflower",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "tight conical bud",
+      "bud_or_flower_state": "closed",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "not visible",
+        "shape": "pointed",
+        "orientation": "upward",
+        "opening_degree": "0",
+        "curvature": "none",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "green",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "enveloping",
+        "orientation": "closed",
+        "shape": "lanceolate",
+        "color": "dark green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "compact green cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "static",
+      "motion_guidance_for_animation": "none",
+      "appearance_guidance_for_generation": "tight green bud, no purple visible",
+      "negative_constraints": "no petals visible"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "expansion",
+      "overall_flower_shape": "swollen cone",
+      "bud_or_flower_state": "swelling",
+      "petal_description": {
+        "visibility": "emerging",
+        "outer_petals": "tightly folded",
+        "inner_petals": "hidden",
+        "shape": "narrow",
+        "orientation": "upward",
+        "opening_degree": "5",
+        "curvature": "none",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "faint purple tips",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "loosening",
+        "orientation": "slightly spreading",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "swelling green center",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "slight increase in volume",
+      "motion_guidance_for_animation": "subtle outward push",
+      "appearance_guidance_for_generation": "bud base widens, purple tips emerge",
+      "negative_constraints": "no open petals"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "unfolding",
+      "overall_flower_shape": "bud with spreading base",
+      "bud_or_flower_state": "opening",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "unfurling",
+        "inner_petals": "tightly packed",
+        "shape": "narrow strap",
+        "orientation": "upward",
+        "opening_degree": "20",
+        "curvature": "slight",
+        "edge_shape": "smooth",
+        "texture": "fibrous",
+        "color_transition": "purple",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "base of flower",
+        "orientation": "spreading",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "cone beginning to darken",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "base widens",
+      "motion_guidance_for_animation": "sepals move down, petals move out",
+      "appearance_guidance_for_generation": "purple color becomes prominent",
+      "negative_constraints": "center should not be fully exposed"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "rapid growth",
+      "overall_flower_shape": "cup-like",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "extending",
+        "inner_petals": "unfolding",
+        "shape": "linear",
+        "orientation": "upward-angled",
+        "opening_degree": "45",
+        "curvature": "concave",
+        "edge_shape": "smooth",
+        "texture": "veined",
+        "color_transition": "vibrant purple",
+        "motion_direction": "outward and upward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "hidden beneath petals",
+        "orientation": "reflexed",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "partial",
+        "position": "on cone",
+        "shape": "tiny dots",
+        "color": "dark orange",
+        "motion_or_reveal": "appearing on cone"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "n/a",
+        "color": "n/a",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "spiky orange-brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "cup shape forming",
+      "motion_guidance_for_animation": "petals fan out from center",
+      "appearance_guidance_for_generation": "center cone texture becomes visible",
+      "negative_constraints": "petals should not be flat yet"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "expansion",
+      "overall_flower_shape": "broad cup",
+      "bud_or_flower_state": "blooming",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "unfurling",
+        "shape": "straplike",
+        "orientation": "horizontal",
+        "opening_degree": "70",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "veined",
+        "color_transition": "purple",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "hidden",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "cone surface",
+        "shape": "pollen-covered",
+        "color": "orange",
+        "motion_or_reveal": "fully visible"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "cone tip",
+        "shape": "stigma",
+        "color": "white",
+        "motion_or_reveal": "emerging"
+      },
+      "flower_center_description": "prominent orange-brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals continue to flatten",
+      "appearance_guidance_for_generation": "cone is distinct and textured",
+      "negative_constraints": "no drooping petals"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "maturation",
+      "overall_flower_shape": "flat-topped",
+      "bud_or_flower_state": "blooming",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "fully extended",
+        "shape": "straplike",
+        "orientation": "horizontal",
+        "opening_degree": "90",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "veined",
+        "color_transition": "deep purple",
+        "motion_direction": "none"
+      },
+      "sepal_description": {
+        "visibility": "hidden",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "cone surface",
+        "shape": "spiky",
+        "color": "orange",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "cone tip",
+        "shape": "stigma",
+        "color": "white",
+        "motion_or_reveal": "visible"
+      },
+      "flower_center_description": "large, dark orange cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "flat disc shape",
+      "motion_guidance_for_animation": "static",
+      "appearance_guidance_for_generation": "full flat petal display",
+      "negative_constraints": "none"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak",
+      "overall_flower_shape": "disc",
+      "bud_or_flower_state": "full bloom",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "horizontal",
+        "inner_petals": "horizontal",
+        "shape": "straplike",
+        "orientation": "horizontal",
+        "opening_degree": "100",
+        "curvature": "slightly reflexed",
+        "edge_shape": "smooth",
+        "texture": "veined",
+        "color_transition": "vibrant purple",
+        "motion_direction": "slight downward reflex"
+      },
+      "sepal_description": {
+        "visibility": "hidden",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "cone surface",
+        "shape": "spiky",
+        "color": "orange",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "cone tip",
+        "shape": "stigma",
+        "color": "white",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "large, dark orange-brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "petals start to droop",
+      "motion_guidance_for_animation": "petals begin to reflex downward",
+      "appearance_guidance_for_generation": "vibrant colors",
+      "negative_constraints": "none"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak",
+      "overall_flower_shape": "reflexed disc",
+      "bud_or_flower_state": "full bloom",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "reflexed",
+        "inner_petals": "reflexed",
+        "shape": "long strap",
+        "orientation": "downward",
+        "opening_degree": "120",
+        "curvature": "downward",
+        "edge_shape": "smooth",
+        "texture": "veined",
+        "color_transition": "purple",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "hidden",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "cone surface",
+        "shape": "spiky",
+        "color": "orange",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "cone tip",
+        "shape": "stigma",
+        "color": "white",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "large, dark orange-brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping petals",
+      "motion_guidance_for_animation": "petals drooping",
+      "appearance_guidance_for_generation": "classic coneflower look",
+      "negative_constraints": "none"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "reflexed disc",
+      "bud_or_flower_state": "mature",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "drooping",
+        "inner_petals": "drooping",
+        "shape": "straplike",
+        "orientation": "downward",
+        "opening_degree": "130",
+        "curvature": "downward",
+        "edge_shape": "slightly irregular",
+        "texture": "fading",
+        "color_transition": "fading purple",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "hidden",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "green",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "cone surface",
+        "shape": "spiky",
+        "color": "brown",
+        "motion_or_reveal": "fading"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "cone tip",
+        "shape": "stigma",
+        "color": "faded white",
+        "motion_or_reveal": "fading"
+      },
+      "flower_center_description": "darkening brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "petals thinning",
+      "motion_guidance_for_animation": "petals lose turgor",
+      "appearance_guidance_for_generation": "colors become duller",
+      "negative_constraints": "none"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "wilting",
+        "inner_petals": "wilting",
+        "shape": "shriveled",
+        "orientation": "downward",
+        "opening_degree": "140",
+        "curvature": "curled",
+        "edge_shape": "wavy",
+        "texture": "dry",
+        "color_transition": "pale purple",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "brownish green",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "cone surface",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "cone tip",
+        "shape": "n/a",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "dark brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "shriveling",
+      "motion_guidance_for_animation": "petals curling",
+      "appearance_guidance_for_generation": "dull, dry appearance",
+      "negative_constraints": "none"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "shriveled",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "curled",
+        "inner_petals": "curled",
+        "shape": "twisted",
+        "orientation": "downward",
+        "opening_degree": "150",
+        "curvature": "inward curl",
+        "edge_shape": "irregular",
+        "texture": "brittle",
+        "color_transition": "brownish purple",
+        "motion_direction": "inward curl"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "cone surface",
+        "shape": "shriveled",
+        "color": "dark brown",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "cone tip",
+        "shape": "n/a",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "dark brown cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "shriveled",
+      "motion_guidance_for_animation": "petals drying and twisting",
+      "appearance_guidance_for_generation": "brittle texture",
+      "negative_constraints": "none"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling",
+      "frame_range": "23-24",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "wilted cone",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "falling",
+        "inner_petals": "falling",
+        "shape": "shriveled",
+        "orientation": "downward",
+        "opening_degree": "160",
+        "curvature": "curled",
+        "edge_shape": "irregular",
+        "texture": "brittle",
+        "color_transition": "brown",
+        "motion_direction": "falling"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "n/a",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "cone surface",
+        "shape": "shriveled",
+        "color": "dark brown",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "cone tip",
+        "shape": "n/a",
+        "color": "brown",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "dark brown, dry cone",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "petals falling away",
+      "motion_guidance_for_animation": "petals detach",
+      "appearance_guidance_for_generation": "mostly bare cone remaining",
+      "negative_constraints": "none"
+    }
+  ]
+}
