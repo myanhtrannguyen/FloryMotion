@@ -1,0 +1,596 @@
+{
+  "class_label": 71,
+  "flower_name": "gazania",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant",
+      "overall_flower_shape": "tightly coiled cylinder",
+      "bud_or_flower_state": "fully closed",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "not visible",
+        "shape": "elongated",
+        "orientation": "upward",
+        "opening_degree": "0%",
+        "curvature": "none",
+        "edge_shape": "tapered",
+        "texture": "smooth",
+        "color_transition": "greenish-yellow",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "enclosing the bud",
+        "orientation": "vertical",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "completely obscured",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "subtle pulse",
+      "appearance_guidance_for_generation": "tight green bud",
+      "negative_constraints": "no visible petals"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom",
+      "overall_flower_shape": "swollen oval",
+      "bud_or_flower_state": "tight bud",
+      "petal_description": {
+        "visibility": "minimal",
+        "outer_petals": "slightly bulging",
+        "inner_petals": "hidden",
+        "shape": "rounded",
+        "orientation": "upward",
+        "opening_degree": "5%",
+        "curvature": "slight",
+        "edge_shape": "tapered",
+        "texture": "smooth",
+        "color_transition": "hint of orange at tips",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "loosening",
+        "orientation": "slightly splayed",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "obscured",
+      "symmetry_and_spatial_arrangement": "radial symmetry",
+      "silhouette_change": "slight expansion",
+      "motion_guidance_for_animation": "slow expansion",
+      "appearance_guidance_for_generation": "swelling green bud with orange tips",
+      "negative_constraints": "no open petals"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "initial bloom",
+      "overall_flower_shape": "cup-like",
+      "bud_or_flower_state": "opening bud",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "unfolding",
+        "inner_petals": "tightly packed",
+        "shape": "lanceolate",
+        "orientation": "vertical",
+        "opening_degree": "15%",
+        "curvature": "inward",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "vibrant orange/yellow",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "base of petals",
+        "orientation": "spreading",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "downward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "center",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "partially hidden",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening at top",
+      "motion_guidance_for_animation": "petals peeling back",
+      "appearance_guidance_for_generation": "orange petals emerging from green sepals",
+      "negative_constraints": "no flat petals"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "early bloom",
+      "overall_flower_shape": "shallow bowl",
+      "bud_or_flower_state": "partially open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully extended",
+        "inner_petals": "tightly coiled",
+        "shape": "lanceolate",
+        "orientation": "angled",
+        "opening_degree": "30%",
+        "curvature": "slight",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "vibrant orange with dark base",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "disk",
+        "color": "dark brown",
+        "motion_or_reveal": "initial reveal"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "tiny",
+        "color": "yellow",
+        "motion_or_reveal": "initial reveal"
+      },
+      "flower_center_description": "dark disk visible",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals spreading",
+      "appearance_guidance_for_generation": "orange petals, dark center",
+      "negative_constraints": "no fully flat petals"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "active bloom",
+      "overall_flower_shape": "bowl",
+      "bud_or_flower_state": "half open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "flat",
+        "inner_petals": "unfolding",
+        "shape": "lanceolate",
+        "orientation": "radial",
+        "opening_degree": "50%",
+        "curvature": "flat",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "disk",
+        "color": "dark brown",
+        "motion_or_reveal": "expanding"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "expanding"
+      },
+      "flower_center_description": "dark disk clearly visible",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals flattening",
+      "appearance_guidance_for_generation": "bright orange gazania",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "active bloom",
+      "overall_flower_shape": "flat disk",
+      "bud_or_flower_state": "mostly open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully flat",
+        "inner_petals": "unfolding",
+        "shape": "lanceolate",
+        "orientation": "radial",
+        "opening_degree": "75%",
+        "curvature": "flat",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "dark brown",
+        "motion_or_reveal": "fully visible"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "fully visible"
+      },
+      "flower_center_description": "vibrant dark disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals fully extended",
+      "appearance_guidance_for_generation": "vibrant orange gazania",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "flat disk",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully flat",
+        "inner_petals": "fully flat",
+        "shape": "lanceolate",
+        "orientation": "radial",
+        "opening_degree": "95%",
+        "curvature": "flat",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "dark brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "vibrant dark disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "static",
+      "appearance_guidance_for_generation": "perfect gazania bloom",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak bloom",
+      "overall_flower_shape": "flat disk",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "fully flat",
+        "inner_petals": "fully flat",
+        "shape": "lanceolate",
+        "orientation": "radial",
+        "opening_degree": "100%",
+        "curvature": "flat",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "vibrant orange",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "dark brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "vibrant dark disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "static",
+      "appearance_guidance_for_generation": "perfect gazania bloom",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "flat disk",
+      "bud_or_flower_state": "fully open",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "slightly drooping",
+        "inner_petals": "flat",
+        "shape": "lanceolate",
+        "orientation": "radial",
+        "opening_degree": "95%",
+        "curvature": "slight",
+        "edge_shape": "tapered",
+        "texture": "velvety",
+        "color_transition": "fading orange",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "dull brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "high",
+        "position": "center",
+        "shape": "disk",
+        "color": "dull yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "dull disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "slight drooping",
+      "motion_guidance_for_animation": "subtle drooping",
+      "appearance_guidance_for_generation": "mature gazania",
+      "negative_constraints": "no severe wilting"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping disk",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "high",
+        "outer_petals": "curling",
+        "inner_petals": "drooping",
+        "shape": "lanceolate",
+        "orientation": "downward",
+        "opening_degree": "80%",
+        "curvature": "curled",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "muted orange",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "low",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "lanceolate",
+        "color": "brownish-green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "disk",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "moderate",
+        "position": "center",
+        "shape": "disk",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "fading disk",
+      "symmetry_and_spatial_arrangement": "radial",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "petals curling",
+      "appearance_guidance_for_generation": "fading gazania",
+      "negative_constraints": "no fresh petals"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "wilted",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "moderate",
+        "outer_petals": "shriveled",
+        "inner_petals": "shriveled",
+        "shape": "irregular",
+        "orientation": "downward",
+        "opening_degree": "40%",
+        "curvature": "curled",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "brownish-orange",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "moderate",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "shriveled disk",
+      "symmetry_and_spatial_arrangement": "irregular",
+      "silhouette_change": "collapsing",
+      "motion_guidance_for_animation": "petals shriveling",
+      "appearance_guidance_for_generation": "wilted gazania",
+      "negative_constraints": "no vibrant colors"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "end of life",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "low",
+        "outer_petals": "falling/withered",
+        "inner_petals": "withered",
+        "shape": "irregular",
+        "orientation": "downward",
+        "opening_degree": "10%",
+        "curvature": "curled",
+        "edge_shape": "withered",
+        "texture": "dry",
+        "color_transition": "brown",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "high",
+        "position": "base",
+        "orientation": "downward",
+        "shape": "withered",
+        "color": "brown",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "low",
+        "position": "center",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "collapsed disk",
+      "symmetry_and_spatial_arrangement": "irregular",
+      "silhouette_change": "collapsed",
+      "motion_guidance_for_animation": "petals falling",
+      "appearance_guidance_for_generation": "wilted gazania",
+      "negative_constraints": "no open petals"
+    }
+  ]
+}

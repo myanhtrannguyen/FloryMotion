@@ -1,0 +1,596 @@
+{
+  "class_label": 15,
+  "flower_name": "yellow iris",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "Closed Bud",
+      "frame_range": "1-2",
+      "growth_phase": "Dormant",
+      "overall_flower_shape": "Tight, elongated cylindrical bud",
+      "bud_or_flower_state": "Closed",
+      "petal_description": {
+        "visibility": "Hidden",
+        "outer_petals": "Wrapped tightly",
+        "inner_petals": "Enclosed",
+        "shape": "Conical",
+        "orientation": "Vertical",
+        "opening_degree": "0",
+        "curvature": "None",
+        "edge_shape": "Smooth",
+        "texture": "Smooth, waxy",
+        "color_transition": "Bright yellow with green base",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Enveloping the bud",
+        "orientation": "Upward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "None",
+        "position": "Internal",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "None",
+        "position": "Internal",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Hidden",
+      "symmetry_and_spatial_arrangement": "Radial",
+      "silhouette_change": "None",
+      "motion_guidance_for_animation": "Static",
+      "appearance_guidance_for_generation": "Tight green and yellow bud",
+      "negative_constraints": "No visible petals"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "Bud Swelling",
+      "frame_range": "3-4",
+      "growth_phase": "Expansion",
+      "overall_flower_shape": "Swollen cylindrical",
+      "bud_or_flower_state": "Bud",
+      "petal_description": {
+        "visibility": "Slightly visible at tip",
+        "outer_petals": "Expanding",
+        "inner_petals": "Hidden",
+        "shape": "Bulging",
+        "orientation": "Vertical",
+        "opening_degree": "5",
+        "curvature": "Slight",
+        "edge_shape": "Smooth",
+        "texture": "Waxy",
+        "color_transition": "Yellow intensifying",
+        "motion_direction": "Outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Loosening",
+        "orientation": "Slightly flared",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Outward"
+      },
+      "stamen_description": {
+        "visibility": "None",
+        "position": "Internal",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "None",
+        "position": "Internal",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Hidden",
+      "symmetry_and_spatial_arrangement": "Radial",
+      "silhouette_change": "Slightly wider",
+      "motion_guidance_for_animation": "Slow expansion",
+      "appearance_guidance_for_generation": "Bud tip opening slightly",
+      "negative_constraints": "No full bloom"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "Sepal Opening",
+      "frame_range": "5-6",
+      "growth_phase": "Dehiscence",
+      "overall_flower_shape": "Opening bud",
+      "bud_or_flower_state": "Bud breaking",
+      "petal_description": {
+        "visibility": "Partial",
+        "outer_petals": "Emerging",
+        "inner_petals": "Hidden",
+        "shape": "Curved",
+        "orientation": "Upward",
+        "opening_degree": "20",
+        "curvature": "Convex",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Vibrant yellow",
+        "motion_direction": "Outward"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Separating",
+        "orientation": "Spreading",
+        "shape": "Lanceolate",
+        "color": "Green to yellow-green",
+        "motion_direction": "Outward"
+      },
+      "stamen_description": {
+        "visibility": "Low",
+        "position": "Deep center",
+        "shape": "Thin",
+        "color": "Yellow",
+        "motion_or_reveal": "Slightly visible"
+      },
+      "pistil_description": {
+        "visibility": "Low",
+        "position": "Center",
+        "shape": "Columnar",
+        "color": "Yellow",
+        "motion_or_reveal": "Slightly visible"
+      },
+      "flower_center_description": "Deep, dark center visible",
+      "symmetry_and_spatial_arrangement": "Radial",
+      "silhouette_change": "Widening at top",
+      "motion_guidance_for_animation": "Sepals pulling back",
+      "appearance_guidance_for_generation": "Yellow petals peeking through",
+      "negative_constraints": "No fully open petals"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "Early Petal Emergence",
+      "frame_range": "7-8",
+      "growth_phase": "Unfolding",
+      "overall_flower_shape": "Bell-like",
+      "bud_or_flower_state": "Partially open",
+      "petal_description": {
+        "visibility": "Visible",
+        "outer_petals": "Unfolding",
+        "inner_petals": "Visible",
+        "shape": "Petaloid",
+        "orientation": "Upward and outward",
+        "opening_degree": "45",
+        "curvature": "Curved",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Solid yellow",
+        "motion_direction": "Outward"
+      },
+      "sepal_description": {
+        "visibility": "Moderate",
+        "position": "Lower base",
+        "orientation": "Horizontal",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "Moderate",
+        "position": "Base of petals",
+        "shape": "Filamentous",
+        "color": "Yellow",
+        "motion_or_reveal": "Revealing"
+      },
+      "pistil_description": {
+        "visibility": "Moderate",
+        "position": "Center",
+        "shape": "Style arms visible",
+        "color": "Yellow",
+        "motion_or_reveal": "Revealing"
+      },
+      "flower_center_description": "Visible center",
+      "symmetry_and_spatial_arrangement": "Symmetrical",
+      "silhouette_change": "Opening outward",
+      "motion_guidance_for_animation": "Petals unfolding",
+      "appearance_guidance_for_generation": "Yellow iris structure emerging",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "Partial Bloom",
+      "frame_range": "9-10",
+      "growth_phase": "Expansion",
+      "overall_flower_shape": "Cup-shaped",
+      "bud_or_flower_state": "Blooming",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Drooping slightly",
+        "inner_petals": "Upright",
+        "shape": "Broad",
+        "orientation": "Mixed",
+        "opening_degree": "70",
+        "curvature": "Curved",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Yellow",
+        "motion_direction": "Outward and downward"
+      },
+      "sepal_description": {
+        "visibility": "Low",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Filamentous",
+        "color": "Yellow",
+        "motion_or_reveal": "Fully revealed"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Style arms",
+        "color": "Yellow",
+        "motion_or_reveal": "Fully revealed"
+      },
+      "flower_center_description": "Complex iris center",
+      "symmetry_and_spatial_arrangement": "Iris-specific (3 falls, 3 standards)",
+      "silhouette_change": "Expanding horizontally",
+      "motion_guidance_for_animation": "Petals spreading",
+      "appearance_guidance_for_generation": "Yellow iris in mid-bloom",
+      "negative_constraints": "No drooping or wilting"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "Half Bloom",
+      "frame_range": "11-12",
+      "growth_phase": "Expansion",
+      "overall_flower_shape": "Open iris",
+      "bud_or_flower_state": "Half bloom",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Horizontal",
+        "inner_petals": "Upright standards",
+        "shape": "Broad",
+        "orientation": "Horizontal/Vertical",
+        "opening_degree": "90",
+        "curvature": "Slightly curved",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Yellow",
+        "motion_direction": "Outward"
+      },
+      "sepal_description": {
+        "visibility": "Low",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Filamentous",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Style arms",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "flower_center_description": "Iris center fully visible",
+      "symmetry_and_spatial_arrangement": "Symmetrical",
+      "silhouette_change": "Wide",
+      "motion_guidance_for_animation": "Slow expansion",
+      "appearance_guidance_for_generation": "Yellow iris half open",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "Near Full Bloom",
+      "frame_range": "13-14",
+      "growth_phase": "Peak",
+      "overall_flower_shape": "Fully expanded",
+      "bud_or_flower_state": "Near full",
+      "petal_description": {
+        "visibility": "Maximum",
+        "outer_petals": "Horizontal",
+        "inner_petals": "Upright",
+        "shape": "Broad",
+        "orientation": "Horizontal/Vertical",
+        "opening_degree": "110",
+        "curvature": "Flat",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Bright yellow",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "Low",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Filamentous",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Style arms",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "flower_center_description": "Clear center",
+      "symmetry_and_spatial_arrangement": "Symmetrical",
+      "silhouette_change": "Maximum width",
+      "motion_guidance_for_animation": "Static",
+      "appearance_guidance_for_generation": "Vibrant yellow iris",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "Full Bloom",
+      "frame_range": "15-16",
+      "growth_phase": "Peak",
+      "overall_flower_shape": "Fully expanded",
+      "bud_or_flower_state": "Full bloom",
+      "petal_description": {
+        "visibility": "Maximum",
+        "outer_petals": "Horizontal",
+        "inner_petals": "Upright",
+        "shape": "Broad",
+        "orientation": "Horizontal/Vertical",
+        "opening_degree": "120",
+        "curvature": "Flat",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Bright yellow",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "Low",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Filamentous",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Style arms",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "flower_center_description": "Clear center",
+      "symmetry_and_spatial_arrangement": "Symmetrical",
+      "silhouette_change": "Maximum width",
+      "motion_guidance_for_animation": "Static",
+      "appearance_guidance_for_generation": "Perfectly bloomed yellow iris",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "Mature Bloom",
+      "frame_range": "17-18",
+      "growth_phase": "Peak/Senescence",
+      "overall_flower_shape": "Fully expanded",
+      "bud_or_flower_state": "Mature",
+      "petal_description": {
+        "visibility": "Maximum",
+        "outer_petals": "Slightly drooping",
+        "inner_petals": "Upright",
+        "shape": "Broad",
+        "orientation": "Horizontal/Vertical",
+        "opening_degree": "120",
+        "curvature": "Slightly drooping",
+        "edge_shape": "Smooth",
+        "texture": "Velvety",
+        "color_transition": "Yellow",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "Low",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Filamentous",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Center",
+        "shape": "Style arms",
+        "color": "Yellow",
+        "motion_or_reveal": "Static"
+      },
+      "flower_center_description": "Clear center",
+      "symmetry_and_spatial_arrangement": "Symmetrical",
+      "silhouette_change": "Slightly drooping",
+      "motion_guidance_for_animation": "Slow drooping",
+      "appearance_guidance_for_generation": "Mature yellow iris",
+      "negative_constraints": "No extreme wilting"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "Early Fading",
+      "frame_range": "19-20",
+      "growth_phase": "Senescence",
+      "overall_flower_shape": "Drooping",
+      "bud_or_flower_state": "Fading",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Drooping",
+        "inner_petals": "Wilting",
+        "shape": "Curled",
+        "orientation": "Downward",
+        "opening_degree": "100",
+        "curvature": "Curved",
+        "edge_shape": "Wavy",
+        "texture": "Limp",
+        "color_transition": "Yellow to pale yellow",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "Moderate",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Lanceolate",
+        "color": "Yellow-green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "Moderate",
+        "position": "Center",
+        "shape": "Shriveling",
+        "color": "Pale yellow",
+        "motion_or_reveal": "Shriveling"
+      },
+      "pistil_description": {
+        "visibility": "Moderate",
+        "position": "Center",
+        "shape": "Shriveling",
+        "color": "Pale yellow",
+        "motion_or_reveal": "Shriveling"
+      },
+      "flower_center_description": "Limp center",
+      "symmetry_and_spatial_arrangement": "Losing symmetry",
+      "silhouette_change": "Drooping",
+      "motion_guidance_for_animation": "Petals drooping",
+      "appearance_guidance_for_generation": "Fading yellow iris",
+      "negative_constraints": "No crisp petals"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "Petal Curling or Drying",
+      "frame_range": "21-22",
+      "growth_phase": "Death",
+      "overall_flower_shape": "Shriveled",
+      "bud_or_flower_state": "Wilted",
+      "petal_description": {
+        "visibility": "Moderate",
+        "outer_petals": "Curled",
+        "inner_petals": "Curled",
+        "shape": "Shriveled",
+        "orientation": "Downward",
+        "opening_degree": "60",
+        "curvature": "Highly curved",
+        "edge_shape": "Browned",
+        "texture": "Dry",
+        "color_transition": "Yellow to brown",
+        "motion_direction": "Inward"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Shriveled",
+        "color": "Brown-green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "Low",
+        "position": "Center",
+        "shape": "Shriveled",
+        "color": "Brown",
+        "motion_or_reveal": "Shriveling"
+      },
+      "pistil_description": {
+        "visibility": "Low",
+        "position": "Center",
+        "shape": "Shriveled",
+        "color": "Brown",
+        "motion_or_reveal": "Shriveling"
+      },
+      "flower_center_description": "Hidden by curled petals",
+      "symmetry_and_spatial_arrangement": "Asymmetrical",
+      "silhouette_change": "Shrinking",
+      "motion_guidance_for_animation": "Petals curling inward",
+      "appearance_guidance_for_generation": "Drying yellow iris",
+      "negative_constraints": "No vibrant colors"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "Wilted or Petal Falling",
+      "frame_range": "23-24",
+      "growth_phase": "Death",
+      "overall_flower_shape": "Collapsed",
+      "bud_or_flower_state": "Wilted",
+      "petal_description": {
+        "visibility": "Low",
+        "outer_petals": "Falling",
+        "inner_petals": "Falling",
+        "shape": "Collapsed",
+        "orientation": "Downward",
+        "opening_degree": "20",
+        "curvature": "Extreme",
+        "edge_shape": "Browned",
+        "texture": "Dry",
+        "color_transition": "Brown",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Shriveled",
+        "color": "Brown",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "None",
+        "position": "Hidden",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "None",
+        "position": "Hidden",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Collapsed",
+      "symmetry_and_spatial_arrangement": "Asymmetrical",
+      "silhouette_change": "Collapsed",
+      "motion_guidance_for_animation": "Petals falling",
+      "appearance_guidance_for_generation": "Wilted yellow iris",
+      "negative_constraints": "No upright petals"
+    }
+  ]
+}

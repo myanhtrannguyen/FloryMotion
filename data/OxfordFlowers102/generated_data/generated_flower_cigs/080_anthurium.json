@@ -1,0 +1,596 @@
+{
+  "class_label": 80,
+  "flower_name": "anthurium",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "Closed Bud",
+      "frame_range": "1-2",
+      "growth_phase": "Dormant",
+      "overall_flower_shape": "Tight, conical, green-sheathed bud",
+      "bud_or_flower_state": "Closed",
+      "petal_description": {
+        "visibility": "Hidden",
+        "outer_petals": "Wrapped tightly by the spathe",
+        "inner_petals": "None",
+        "shape": "Conical",
+        "orientation": "Vertical",
+        "opening_degree": "0",
+        "curvature": "None",
+        "edge_shape": "Smooth",
+        "texture": "Waxy, green",
+        "color_transition": "Solid green",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Enclosing the spadix",
+        "orientation": "Upward",
+        "shape": "Lanceolate",
+        "color": "Deep green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "Hidden",
+        "position": "Inside spathe",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "Hidden",
+        "position": "Inside spadix",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix fully enclosed by green spathe",
+      "symmetry_and_spatial_arrangement": "Radial",
+      "silhouette_change": "Minimal",
+      "motion_guidance_for_animation": "Slight swelling of the base",
+      "appearance_guidance_for_generation": "Tight green cone",
+      "negative_constraints": "No visible red color"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "Bud Swelling",
+      "frame_range": "3-4",
+      "growth_phase": "Early expansion",
+      "overall_flower_shape": "Thickening cone",
+      "bud_or_flower_state": "Swelling",
+      "petal_description": {
+        "visibility": "Partially visible",
+        "outer_petals": "Spathe beginning to loosen",
+        "inner_petals": "N/A",
+        "shape": "Expanding cone",
+        "orientation": "Vertical",
+        "opening_degree": "5",
+        "curvature": "Slightly convex",
+        "edge_shape": "Tight",
+        "texture": "Waxy",
+        "color_transition": "Green to faint red at base",
+        "motion_direction": "Outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "High",
+        "position": "Base of spadix",
+        "orientation": "Upward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Expanding"
+      },
+      "stamen_description": {
+        "visibility": "Low",
+        "position": "Base of spadix",
+        "shape": "Small bumps",
+        "color": "Yellowish-green",
+        "motion_or_reveal": "Slightly visible"
+      },
+      "pistil_description": {
+        "visibility": "Hidden",
+        "position": "Spadix",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix beginning to emerge",
+      "symmetry_and_spatial_arrangement": "Radial",
+      "silhouette_change": "Increased width",
+      "motion_guidance_for_animation": "Slow outward pressure",
+      "appearance_guidance_for_generation": "Green transitioning to red",
+      "negative_constraints": "No fully open spathe"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "Spathe Opening",
+      "frame_range": "5-6",
+      "growth_phase": "Active opening",
+      "overall_flower_shape": "Heart-shaped base forming",
+      "bud_or_flower_state": "Partially open",
+      "petal_description": {
+        "visibility": "Visible",
+        "outer_petals": "Spathe unfolding from spadix",
+        "inner_petals": "N/A",
+        "shape": "Heart-like",
+        "orientation": "Angled",
+        "opening_degree": "30",
+        "curvature": "Concave",
+        "edge_shape": "Curved",
+        "texture": "Glossy",
+        "color_transition": "Red patches appearing",
+        "motion_direction": "Unfurling"
+      },
+      "sepal_description": {
+        "visibility": "Medium",
+        "position": "Base",
+        "orientation": "Outward",
+        "shape": "Lanceolate",
+        "color": "Green",
+        "motion_direction": "Receding"
+      },
+      "stamen_description": {
+        "visibility": "Medium",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Cream",
+        "motion_or_reveal": "Emerging"
+      },
+      "pistil_description": {
+        "visibility": "Low",
+        "position": "Spadix surface",
+        "shape": "Tiny dots",
+        "color": "Cream",
+        "motion_or_reveal": "Emerging"
+      },
+      "flower_center_description": "Spadix becoming prominent",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "Heart shape emerging",
+      "motion_guidance_for_animation": "Spathe peeling away from spadix",
+      "appearance_guidance_for_generation": "Glossy red spathe",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "Early Petal Emergence",
+      "frame_range": "7-8",
+      "growth_phase": "Expansion",
+      "overall_flower_shape": "Broadening heart",
+      "bud_or_flower_state": "Half-open",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe expanding",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Horizontal",
+        "opening_degree": "60",
+        "curvature": "Slightly wavy",
+        "edge_shape": "Smooth",
+        "texture": "Glossy",
+        "color_transition": "Mostly red",
+        "motion_direction": "Outward"
+      },
+      "sepal_description": {
+        "visibility": "Low",
+        "position": "Base",
+        "orientation": "Downward",
+        "shape": "Small",
+        "color": "Green",
+        "motion_direction": "Static"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Cream",
+        "motion_or_reveal": "Fully visible"
+      },
+      "pistil_description": {
+        "visibility": "Medium",
+        "position": "Spadix",
+        "shape": "Tiny bumps",
+        "color": "Cream",
+        "motion_or_reveal": "Visible"
+      },
+      "flower_center_description": "Spadix fully exposed",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "Widening",
+      "motion_guidance_for_animation": "Spathe flattening",
+      "appearance_guidance_for_generation": "Vibrant red",
+      "negative_constraints": "No drooping"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "Partial Bloom",
+      "frame_range": "9-10",
+      "growth_phase": "Maturation",
+      "overall_flower_shape": "Flat heart",
+      "bud_or_flower_state": "Open",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe fully extended",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Horizontal",
+        "opening_degree": "90",
+        "curvature": "Flat",
+        "edge_shape": "Smooth",
+        "texture": "Glossy",
+        "color_transition": "Deep red",
+        "motion_direction": "Stable"
+      },
+      "sepal_description": {
+        "visibility": "Hidden",
+        "position": "Base",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Cream",
+        "motion_or_reveal": "Stable"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Tiny bumps",
+        "color": "Cream",
+        "motion_or_reveal": "Stable"
+      },
+      "flower_center_description": "Spadix firm and upright",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "Stable",
+      "motion_guidance_for_animation": "Minor fluttering",
+      "appearance_guidance_for_generation": "Glossy red spathe",
+      "negative_constraints": "No color fading"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "Half Bloom",
+      "frame_range": "11-12",
+      "growth_phase": "Peak",
+      "overall_flower_shape": "Perfect heart",
+      "bud_or_flower_state": "Full",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Horizontal",
+        "opening_degree": "100",
+        "curvature": "Flat",
+        "edge_shape": "Smooth",
+        "texture": "High gloss",
+        "color_transition": "Solid red",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Cream",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Tiny bumps",
+        "color": "Cream",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix firm",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "None",
+      "motion_guidance_for_animation": "Static",
+      "appearance_guidance_for_generation": "Vibrant and glossy",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "Near Full Bloom",
+      "frame_range": "13-14",
+      "growth_phase": "Peak",
+      "overall_flower_shape": "Perfect heart",
+      "bud_or_flower_state": "Full",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Horizontal",
+        "opening_degree": "100",
+        "curvature": "Flat",
+        "edge_shape": "Smooth",
+        "texture": "High gloss",
+        "color_transition": "Solid red",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Cream",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Tiny bumps",
+        "color": "Cream",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix firm",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "None",
+      "motion_guidance_for_animation": "Static",
+      "appearance_guidance_for_generation": "Vibrant and glossy",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "Full Bloom",
+      "frame_range": "15-16",
+      "growth_phase": "Peak",
+      "overall_flower_shape": "Perfect heart",
+      "bud_or_flower_state": "Full",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Horizontal",
+        "opening_degree": "100",
+        "curvature": "Flat",
+        "edge_shape": "Smooth",
+        "texture": "High gloss",
+        "color_transition": "Solid red",
+        "motion_direction": "None"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Cream",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "High",
+        "position": "Spadix",
+        "shape": "Tiny bumps",
+        "color": "Cream",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix firm",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "None",
+      "motion_guidance_for_animation": "Static",
+      "appearance_guidance_for_generation": "Vibrant and glossy",
+      "negative_constraints": "No wilting"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "Mature Bloom",
+      "frame_range": "17-18",
+      "growth_phase": "Post-peak",
+      "overall_flower_shape": "Slightly drooping heart",
+      "bud_or_flower_state": "Mature",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Slightly downward",
+        "opening_degree": "90",
+        "curvature": "Slightly drooping",
+        "edge_shape": "Smooth",
+        "texture": "Less glossy",
+        "color_transition": "Darkening red",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "Medium",
+        "position": "Spadix",
+        "shape": "Cylindrical",
+        "color": "Dull cream",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "Medium",
+        "position": "Spadix",
+        "shape": "Tiny bumps",
+        "color": "Dull cream",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix softening",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "Drooping",
+      "motion_guidance_for_animation": "Slow downward sag",
+      "appearance_guidance_for_generation": "Darker red, less glossy",
+      "negative_constraints": "No browning"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "Early Fading",
+      "frame_range": "19-20",
+      "growth_phase": "Senescence",
+      "overall_flower_shape": "Wilting heart",
+      "bud_or_flower_state": "Fading",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Cordate",
+        "orientation": "Downward",
+        "opening_degree": "80",
+        "curvature": "Curled edges",
+        "edge_shape": "Wavy",
+        "texture": "Dull, drying",
+        "color_transition": "Red to brownish-red",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "Low",
+        "position": "Spadix",
+        "shape": "Shrivelled",
+        "color": "Brown",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "Low",
+        "position": "Spadix",
+        "shape": "Shrivelled",
+        "color": "Brown",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix browning",
+      "symmetry_and_spatial_arrangement": "Bilateral",
+      "silhouette_change": "Drooping",
+      "motion_guidance_for_animation": "Curling edges",
+      "appearance_guidance_for_generation": "Dull brownish red",
+      "negative_constraints": "No petal drop"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "Petal Curling/Drying",
+      "frame_range": "21-22",
+      "growth_phase": "Wilt",
+      "overall_flower_shape": "Shrivelled heart",
+      "bud_or_flower_state": "Wilted",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Shrivelled",
+        "orientation": "Downward",
+        "opening_degree": "40",
+        "curvature": "Highly curled",
+        "edge_shape": "Crisp/Brown",
+        "texture": "Dry",
+        "color_transition": "Brown",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "Low",
+        "position": "Spadix",
+        "shape": "Shrivelled",
+        "color": "Brown",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "Low",
+        "position": "Spadix",
+        "shape": "Shrivelled",
+        "color": "Brown",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix shrivelled",
+      "symmetry_and_spatial_arrangement": "Asymmetrical",
+      "silhouette_change": "Shrinking",
+      "motion_guidance_for_animation": "Petal edge curling",
+      "appearance_guidance_for_generation": "Brown, dry texture",
+      "negative_constraints": "No fresh color"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "Wilted",
+      "frame_range": "23-24",
+      "growth_phase": "Death",
+      "overall_flower_shape": "Collapsed",
+      "bud_or_flower_state": "Wilted",
+      "petal_description": {
+        "visibility": "High",
+        "outer_petals": "Spathe",
+        "inner_petals": "N/A",
+        "shape": "Collapsed",
+        "orientation": "Downward",
+        "opening_degree": "10",
+        "curvature": "Extremely curled",
+        "edge_shape": "Brittle",
+        "texture": "Dry, papery",
+        "color_transition": "Brown/Black",
+        "motion_direction": "Downward"
+      },
+      "sepal_description": {
+        "visibility": "None",
+        "position": "N/A",
+        "orientation": "N/A",
+        "shape": "N/A",
+        "color": "N/A",
+        "motion_direction": "None"
+      },
+      "stamen_description": {
+        "visibility": "Low",
+        "position": "Spadix",
+        "shape": "Shrivelled",
+        "color": "Black",
+        "motion_or_reveal": "None"
+      },
+      "pistil_description": {
+        "visibility": "Low",
+        "position": "Spadix",
+        "shape": "Shrivelled",
+        "color": "Black",
+        "motion_or_reveal": "None"
+      },
+      "flower_center_description": "Spadix collapsed",
+      "symmetry_and_spatial_arrangement": "Asymmetrical",
+      "silhouette_change": "Collapsed",
+      "motion_guidance_for_animation": "Final sag",
+      "appearance_guidance_for_generation": "Dark brown/black",
+      "negative_constraints": "No green or red"
+    }
+  ]
+}

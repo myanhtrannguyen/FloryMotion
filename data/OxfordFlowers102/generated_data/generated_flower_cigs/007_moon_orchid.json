@@ -1,0 +1,596 @@
+{
+  "class_label": 7,
+  "flower_name": "moon orchid",
+  "total_frames": 24,
+  "num_stages": 12,
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "closed bud",
+      "frame_range": "1-2",
+      "growth_phase": "dormant bud",
+      "overall_flower_shape": "tightly closed, elongated oval",
+      "bud_or_flower_state": "closed bud",
+      "petal_description": {
+        "visibility": "hidden",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "hidden",
+        "shape": "cylindrical",
+        "orientation": "upright",
+        "opening_degree": "0%",
+        "curvature": "none",
+        "edge_shape": "smooth",
+        "texture": "waxy, firm",
+        "color_transition": "pale green",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "fully visible",
+        "position": "enveloping",
+        "orientation": "vertical",
+        "shape": "lanceolate",
+        "color": "light green",
+        "motion_direction": "none"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "enclosed",
+      "symmetry_and_spatial_arrangement": "bilateral symmetry",
+      "silhouette_change": "none",
+      "motion_guidance_for_animation": "subtle pulse",
+      "appearance_guidance_for_generation": "smooth waxy surface",
+      "negative_constraints": "no petal edges visible"
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "bud swelling",
+      "frame_range": "3-4",
+      "growth_phase": "pre-bloom expansion",
+      "overall_flower_shape": "globular",
+      "bud_or_flower_state": "swelling bud",
+      "petal_description": {
+        "visibility": "partially visible",
+        "outer_petals": "tightly wrapped",
+        "inner_petals": "hidden",
+        "shape": "rounded",
+        "orientation": "upright",
+        "opening_degree": "5%",
+        "curvature": "slight",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "pale green to white tint",
+        "motion_direction": "outward expansion"
+      },
+      "sepal_description": {
+        "visibility": "fully visible",
+        "position": "stretching",
+        "orientation": "slightly splayed",
+        "shape": "lanceolate",
+        "color": "pale green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "enclosed",
+      "symmetry_and_spatial_arrangement": "bilateral symmetry",
+      "silhouette_change": "increasing volume",
+      "motion_guidance_for_animation": "slow outward growth",
+      "appearance_guidance_for_generation": "turgid appearance",
+      "negative_constraints": "no color change to yellow"
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "sepal opening",
+      "frame_range": "5-6",
+      "growth_phase": "initial split",
+      "overall_flower_shape": "loosening bud",
+      "bud_or_flower_state": "bud splitting",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "separating",
+        "inner_petals": "hidden",
+        "shape": "curved",
+        "orientation": "outward",
+        "opening_degree": "15%",
+        "curvature": "convex",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "white with green veins",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "opening",
+        "orientation": "curving back",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "outward"
+      },
+      "stamen_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "pistil_description": {
+        "visibility": "hidden",
+        "position": "internal",
+        "shape": "none",
+        "color": "none",
+        "motion_or_reveal": "none"
+      },
+      "flower_center_description": "partially visible",
+      "symmetry_and_spatial_arrangement": "bilateral symmetry",
+      "silhouette_change": "splitting at apex",
+      "motion_guidance_for_animation": "sepals peeling back",
+      "appearance_guidance_for_generation": "crisp white edges",
+      "negative_constraints": "no petal wilting"
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "early petal emergence",
+      "frame_range": "7-8",
+      "growth_phase": "unfolding",
+      "overall_flower_shape": "cup-like",
+      "bud_or_flower_state": "early bloom",
+      "petal_description": {
+        "visibility": "clearly visible",
+        "outer_petals": "unfolding",
+        "inner_petals": "emerging",
+        "shape": "broadly ovate",
+        "orientation": "outward",
+        "opening_degree": "30%",
+        "curvature": "concave",
+        "edge_shape": "smooth",
+        "texture": "waxy, smooth",
+        "color_transition": "pure white",
+        "motion_direction": "unfurling"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind petals",
+        "orientation": "curved back",
+        "shape": "lanceolate",
+        "color": "pale green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "partially visible",
+        "position": "central column",
+        "shape": "columnar",
+        "color": "yellow-white",
+        "motion_or_reveal": "slow reveal"
+      },
+      "pistil_description": {
+        "visibility": "partially visible",
+        "position": "central column",
+        "shape": "columnar",
+        "color": "yellow-white",
+        "motion_or_reveal": "slow reveal"
+      },
+      "flower_center_description": "column visible",
+      "symmetry_and_spatial_arrangement": "bilateral symmetry",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals unfurling",
+      "appearance_guidance_for_generation": "clean white petals",
+      "negative_constraints": "no brown spots"
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "partial bloom",
+      "frame_range": "9-10",
+      "growth_phase": "active opening",
+      "overall_flower_shape": "broad cup",
+      "bud_or_flower_state": "partial bloom",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "wide",
+        "inner_petals": "unfolding",
+        "shape": "broadly ovate",
+        "orientation": "radiating",
+        "opening_degree": "50%",
+        "curvature": "concave",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "pure white",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "pale green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "revealed"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "revealed"
+      },
+      "flower_center_description": "column clearly visible",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "flattening",
+      "motion_guidance_for_animation": "petals spreading",
+      "appearance_guidance_for_generation": "bright center",
+      "negative_constraints": "no drooping"
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "half bloom",
+      "frame_range": "11-12",
+      "growth_phase": "mid-bloom",
+      "overall_flower_shape": "flat-faced",
+      "bud_or_flower_state": "half bloom",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "fully expanded",
+        "inner_petals": "visible",
+        "shape": "broadly ovate",
+        "orientation": "flat",
+        "opening_degree": "70%",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "pure white",
+        "motion_direction": "outward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "pale green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "column prominent",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "widening",
+      "motion_guidance_for_animation": "petals reaching flat state",
+      "appearance_guidance_for_generation": "vibrant center",
+      "negative_constraints": "no petal folding"
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "near full bloom",
+      "frame_range": "13-14",
+      "growth_phase": "peak opening",
+      "overall_flower_shape": "wide flat",
+      "bud_or_flower_state": "near full bloom",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "fully expanded",
+        "inner_petals": "fully expanded",
+        "shape": "broadly ovate",
+        "orientation": "flat",
+        "opening_degree": "90%",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "pure white",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "pale green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "column prominent",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "maximal width",
+      "motion_guidance_for_animation": "slight swaying",
+      "appearance_guidance_for_generation": "pristine",
+      "negative_constraints": "no wilting"
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "full bloom",
+      "frame_range": "15-16",
+      "growth_phase": "peak",
+      "overall_flower_shape": "wide flat",
+      "bud_or_flower_state": "full bloom",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "fully expanded",
+        "inner_petals": "fully expanded",
+        "shape": "broadly ovate",
+        "orientation": "flat",
+        "opening_degree": "100%",
+        "curvature": "flat",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "pure white",
+        "motion_direction": "static"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "pale green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "column prominent",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "static",
+      "motion_guidance_for_animation": "static",
+      "appearance_guidance_for_generation": "perfectly open",
+      "negative_constraints": "no color fading"
+    },
+    {
+      "stage_id": 9,
+      "stage_name": "mature bloom",
+      "frame_range": "17-18",
+      "growth_phase": "post-peak",
+      "overall_flower_shape": "wide flat",
+      "bud_or_flower_state": "mature bloom",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "fully expanded",
+        "inner_petals": "fully expanded",
+        "shape": "broadly ovate",
+        "orientation": "flat",
+        "opening_degree": "100%",
+        "curvature": "slight downward",
+        "edge_shape": "smooth",
+        "texture": "waxy",
+        "color_transition": "white to cream",
+        "motion_direction": "slight drooping"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "fading yellow",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "fading yellow",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "column visible",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "slight sagging",
+      "motion_guidance_for_animation": "slow drooping",
+      "appearance_guidance_for_generation": "creamy white",
+      "negative_constraints": "no petal loss"
+    },
+    {
+      "stage_id": 10,
+      "stage_name": "early fading",
+      "frame_range": "19-20",
+      "growth_phase": "senescence",
+      "overall_flower_shape": "drooping",
+      "bud_or_flower_state": "fading",
+      "petal_description": {
+        "visibility": "fully visible",
+        "outer_petals": "drooping",
+        "inner_petals": "drooping",
+        "shape": "broadly ovate",
+        "orientation": "downward",
+        "opening_degree": "90%",
+        "curvature": "curved",
+        "edge_shape": "slightly irregular",
+        "texture": "losing turgor",
+        "color_transition": "cream to pale yellow",
+        "motion_direction": "downward"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "dull green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "brownish",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "columnar",
+        "color": "brownish",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "darkening",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "drooping",
+      "motion_guidance_for_animation": "slow downward wilt",
+      "appearance_guidance_for_generation": "loss of luster",
+      "negative_constraints": "no rapid petal fall"
+    },
+    {
+      "stage_id": 11,
+      "stage_name": "petal curling or drying",
+      "frame_range": "21-22",
+      "growth_phase": "advanced senescence",
+      "overall_flower_shape": "shriveled",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "visible",
+        "outer_petals": "curling",
+        "inner_petals": "curling",
+        "shape": "shriveled",
+        "orientation": "inward",
+        "opening_degree": "40%",
+        "curvature": "inward",
+        "edge_shape": "wavy, dry",
+        "texture": "dry",
+        "color_transition": "yellowish brown",
+        "motion_direction": "inward curling"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "curved",
+        "shape": "lanceolate",
+        "color": "brownish green",
+        "motion_direction": "static"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "darkened",
+      "symmetry_and_spatial_arrangement": "bilateral",
+      "silhouette_change": "shrinking",
+      "motion_guidance_for_animation": "inward curling",
+      "appearance_guidance_for_generation": "dry texture",
+      "negative_constraints": "no bright colors"
+    },
+    {
+      "stage_id": 12,
+      "stage_name": "wilted or petal falling stage",
+      "frame_range": "23-24",
+      "growth_phase": "death",
+      "overall_flower_shape": "collapsed",
+      "bud_or_flower_state": "wilted",
+      "petal_description": {
+        "visibility": "partially visible",
+        "outer_petals": "falling",
+        "inner_petals": "collapsed",
+        "shape": "irregular",
+        "orientation": "downward",
+        "opening_degree": "10%",
+        "curvature": "collapsed",
+        "edge_shape": "frayed",
+        "texture": "dry, brittle",
+        "color_transition": "brown",
+        "motion_direction": "falling"
+      },
+      "sepal_description": {
+        "visibility": "visible",
+        "position": "behind",
+        "orientation": "drooping",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_direction": "drooping"
+      },
+      "stamen_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "pistil_description": {
+        "visibility": "visible",
+        "position": "central",
+        "shape": "shriveled",
+        "color": "brown",
+        "motion_or_reveal": "static"
+      },
+      "flower_center_description": "collapsed",
+      "symmetry_and_spatial_arrangement": "distorted",
+      "silhouette_change": "collapsed",
+      "motion_guidance_for_animation": "petals dropping",
+      "appearance_guidance_for_generation": "brown, brittle",
+      "negative_constraints": "no vibrant colors"
+    }
+  ]
+}
