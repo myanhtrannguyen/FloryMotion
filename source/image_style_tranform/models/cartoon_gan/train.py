@@ -56,6 +56,16 @@ def save_history_csv(history: list[dict], path: Path) -> None:
         writer.writerows(history)
 
 
+def serialize_args(args: argparse.Namespace) -> dict:
+    serialized = {}
+    for key, value in vars(args).items():
+        if isinstance(value, Path):
+            serialized[key] = str(value)
+        else:
+            serialized[key] = value
+    return serialized
+
+
 def discriminator_loss(
     discriminator: nn.Module,
     real_style: torch.Tensor,
@@ -118,6 +128,41 @@ def save_validation_samples(
     generator.train()
 
 
+@torch.no_grad()
+def evaluate_validation_score(
+    generator: nn.Module,
+    discriminator: nn.Module,
+    loader: DataLoader,
+    device: torch.device,
+    adversarial_criterion: nn.Module,
+    content_weight: float,
+    tv_weight: float,
+) -> Dict[str, float]:
+    generator.eval()
+    discriminator.eval()
+    running = {"val_score": 0.0, "val_g_adv": 0.0, "val_content": 0.0, "val_tv": 0.0}
+
+    for photos, _ in loader:
+        photos = photos.to(device)
+        generated = generator(photos)
+        pred = discriminator(generated)
+
+        adv_loss = adversarial_criterion(pred, torch.ones_like(pred))
+        content_loss = torch.mean(torch.abs(generated - photos))
+        tv_loss = total_variation_loss(generated)
+        score = adv_loss + content_weight * content_loss + tv_weight * tv_loss
+
+        running["val_score"] += float(score.detach().cpu().item())
+        running["val_g_adv"] += float(adv_loss.detach().cpu().item())
+        running["val_content"] += float(content_loss.detach().cpu().item())
+        running["val_tv"] += float(tv_loss.detach().cpu().item())
+
+    num_batches = max(len(loader), 1)
+    generator.train()
+    discriminator.train()
+    return {name: value / num_batches for name, value in running.items()}
+
+
 def save_checkpoint(
     path: Path,
     epoch: int,
@@ -127,6 +172,7 @@ def save_checkpoint(
     optimizer_d: torch.optim.Optimizer,
     args: argparse.Namespace,
     history: list[dict],
+    best_score: float | None = None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(
@@ -136,8 +182,9 @@ def save_checkpoint(
             "discriminator": discriminator.state_dict(),
             "optimizer_g": optimizer_g.state_dict(),
             "optimizer_d": optimizer_d.state_dict(),
-            "args": vars(args),
+            "args": serialize_args(args),
             "history": history,
+            "best_score": best_score,
         },
         path,
     )
@@ -227,6 +274,7 @@ def main() -> None:
     optimizer_g = torch.optim.Adam(generator.parameters(), lr=args.lr, betas=(args.beta1, 0.999))
     optimizer_d = torch.optim.Adam(discriminator.parameters(), lr=args.lr, betas=(args.beta1, 0.999))
     history: list[dict] = []
+    best_score = float("inf")
     for epoch in range(1, args.epochs + 1):
         epoch_start = time.time()
         generator.train()
@@ -286,23 +334,54 @@ def main() -> None:
         epoch_log["epoch_time_sec"] = round(time.time() - epoch_start, 3)
         epoch_log["lr_g"] = optimizer_g.param_groups[0]["lr"]
         epoch_log["lr_d"] = optimizer_d.param_groups[0]["lr"]
+        val_log = evaluate_validation_score(
+            generator,
+            discriminator,
+            val_loader,
+            device,
+            adversarial_criterion,
+            content_weight=args.content_weight,
+            tv_weight=args.tv_weight,
+        )
+        epoch_log.update(val_log)
         history.append(epoch_log)
         logger.info(
             "epoch=%03d summary d_loss=%.4f g_loss=%.4f g_adv=%.4f "
-            "content=%.4f tv=%.4f time=%.2fs",
+            "content=%.4f tv=%.4f val_score=%.4f val_content=%.4f time=%.2fs",
             epoch,
             epoch_log["d_loss"],
             epoch_log["g_loss"],
             epoch_log["g_adv"],
             epoch_log["content"],
             epoch_log["tv"],
+            epoch_log["val_score"],
+            epoch_log["val_content"],
             epoch_log["epoch_time_sec"],
         )
 
         save_validation_samples(generator, val_loader, device, sample_dir, epoch)
-        save_json({"domain": args.domain, "history": history, "args": vars(args)}, run_dir / "history.json")
+        save_json({"domain": args.domain, "history": history, "args": serialize_args(args)}, run_dir / "history.json")
         save_history_csv(history, run_dir / "history.csv")
         logger.info("saved validation samples to %s", sample_dir / f"epoch_{epoch:03d}.jpg")
+
+        if epoch_log["val_score"] < best_score:
+            best_score = epoch_log["val_score"]
+            save_checkpoint(
+                run_dir / "best_model.pth",
+                epoch,
+                generator,
+                discriminator,
+                optimizer_g,
+                optimizer_d,
+                args,
+                history,
+                best_score=best_score,
+            )
+            logger.info(
+                "updated best checkpoint at %s val_score=%.4f",
+                run_dir / "best_model.pth",
+                best_score,
+            )
 
         if epoch % args.save_every == 0 or epoch == args.epochs:
             save_checkpoint(
@@ -314,6 +393,7 @@ def main() -> None:
                 optimizer_d,
                 args,
                 history,
+                best_score=best_score,
             )
             logger.info("saved checkpoint to %s", checkpoint_dir / f"epoch_{epoch:03d}.pth")
             save_checkpoint(
@@ -325,6 +405,7 @@ def main() -> None:
                 optimizer_d,
                 args,
                 history,
+                best_score=best_score,
             )
             logger.info("updated last checkpoint at %s", run_dir / "last_model.pth")
 
